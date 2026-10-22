@@ -33,7 +33,9 @@ class Photos(unittest.TestCase):
         self.assertIn('Creator &lt;name&gt;', html)
         self.assertIn('width="1" height="1"', html)
         self.assertIn('loading="lazy"', html)
-        self.assertIn('https://example.org/permission', html)
+        self.assertIn('photo-credits.html#photo-test', html)
+        self.assertNotIn('Modifications:', html)
+        self.assertIn('https://example.org/permission', build.photo_credits())
         self.assertIn('Converted to WebP', build.photo_credits())
 
     def test_reject_incomplete_unapproved_external_and_oversized(self):
@@ -54,6 +56,14 @@ class Photos(unittest.TestCase):
         html = build.card(h, 1)
         self.assertIn('class="card-photo"', html)
         self.assertNotIn('Illustration · photo placeholder', html)
+
+    def test_compact_sharealike_credit(self):
+        self.photo.update(license='CC BY-SA 4.0', license_url='https://creativecommons.org/licenses/by-sa/4.0/')
+        html = build.hike_photo(dict(photo=self.photo))
+        self.assertIn('https://creativecommons.org/licenses/by-sa/4.0/', html)
+        self.assertIn('https://example.org/photo', html)
+        self.assertIn('WebP conversion', html)
+        self.assertIn('photo-credits.html#photo-test', html)
 
     def test_placeholder_and_empty_credits(self):
         build.HIKES = []

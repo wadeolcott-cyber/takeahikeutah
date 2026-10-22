@@ -108,6 +108,19 @@ def photo_credit(photo):
             f'Modifications: {e(photo["modifications"])}.</span>')
 
 
+def credit_id(photo):
+    return 'photo-' + Path(photo['src']).stem
+
+
+def compact_photo_credit(photo):
+    target = 'photo-credits.html#' + credit_id(photo)
+    credit = f'Photo: {e(photo["photographer"])}'
+    if photo['license'].startswith('CC BY-SA 4.0'):
+        credit = (f'Photo: <a href="{e(photo["source_url"])}">{e(photo["photographer"])}</a>'
+                  f' · <a href="{e(photo["license_url"])}">CC BY-SA 4.0</a> · WebP conversion')
+    return f'<span>{credit} · <a href="{e(target)}">Photo credits</a></span>'
+
+
 def hike_photos(hike):
     return ([hike['photo']] if hike.get('photo') else []) + hike.get('additional_photos', [])
 
@@ -117,7 +130,7 @@ def photo_figure(photo):
     caption = f'<p>{e(photo["caption"])}</p>' if photo.get('caption') else ''
     return (f'<figure class="hike-photo"><img src="{e(photo["src"])}" alt="{e(photo["alt"])}" '
             f'width="{width}" height="{height}" loading="lazy" decoding="async">'
-            f'<figcaption>{caption}{photo_credit(photo)}</figcaption></figure>')
+            f'<figcaption>{caption}{compact_photo_credit(photo)}</figcaption></figure>')
 
 
 def hike_photo(hike):
@@ -128,7 +141,7 @@ def hike_photo(hike):
 
 
 def photo_credits():
-    entries = ''.join(f'<article><h2><a href="{e(h["slug"])}.html">{e(h["title"])}</a></h2><p>{photo_credit(photo)}</p></article>' for h in HIKES for photo in hike_photos(h))
+    entries = ''.join(f'<article id="{e(credit_id(photo))}"><h2><a href="{e(h["slug"])}.html">{e(h["title"])}</a></h2><p>{photo_credit(photo)}</p></article>' for h in HIKES for photo in hike_photos(h))
     return ('<section class="wrap section"><h1 class="page-title">Photo Credits</h1>'
             '<p class="lede">Thank you to the photographers whose work helps us explore Utah.</p>'
             '<div class="reading"><h2>Homepage: Bryce Canyon</h2>'
