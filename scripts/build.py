@@ -121,7 +121,7 @@ def photo_credits():
     return ('<section class="wrap section"><h1 class="page-title">Photo Credits</h1>'
             '<p class="lede">Thank you to the photographers whose work helps us explore Utah.</p>'
             '<div class="reading"><h2>Homepage: Bryce Canyon</h2>'
-            '<p>The homepage image was supplied by the site owner. Photographer, original source, and license details have not yet been recorded. No public reuse license is claimed; contact the site owner about this image.</p>'
+            '<p>Photo by the Take a Hike Utah site owner, who confirmed personally taking this photograph and authorized its use on this website. Copyright remains with the photographer; no public reuse license is granted. Source: owner-supplied WebP. Display modifications: responsive sizing and cropping for the homepage layout. Earlier editing history has not been recorded. Contact the site owner for reuse permission.</p>'
             '<h2>Trail photographs</h2>' + (entries or '<p>No trail photographs have been added yet. Hike pages currently use illustrations, clearly labeled as placeholders.</p>') +
             '<h2>Illustrations</h2><p>The landscape illustration and site icon were created for this website. They are not photographs of individual trails. No public reuse license is granted here.</p>'
             '<p>A credit is not permission to reuse an image. Consult the linked license and original source, and obtain any additional permissions required for your use.</p></div></section>')
