@@ -14,7 +14,7 @@
     "terrain": [],
     "difficulty": null,
     "trailhead": null,
-    "preparation": "Check the official land manager\u2019s route information, weather, closures, access rules, and current conditions before choosing an outing.",
+    "preparation": "Check the official land manager’s route information, weather, closures, access rules, and current conditions before choosing an outing.",
     "hazards": null,
     "sources": [],
     "verified_on": null
@@ -34,7 +34,7 @@
     "terrain": [],
     "difficulty": null,
     "trailhead": null,
-    "preparation": "Check the official land manager\u2019s route information, weather, closures, access rules, and current conditions before choosing an outing.",
+    "preparation": "Check the official land manager’s route information, weather, closures, access rules, and current conditions before choosing an outing.",
     "hazards": null,
     "sources": [],
     "verified_on": null
@@ -54,9 +54,594 @@
     "terrain": [],
     "difficulty": null,
     "trailhead": null,
-    "preparation": "Check the official land manager\u2019s route information, weather, closures, access rules, and current conditions before choosing an outing.",
+    "preparation": "Check the official land manager’s route information, weather, closures, access rules, and current conditions before choosing an outing.",
     "hazards": null,
     "sources": [],
     "verified_on": null
+  },
+  {
+    "slug": "silver-lake-loop",
+    "title": "Silver Lake Loop",
+    "subtitle": "Brighton, Big Cottonwood Canyon",
+    "description": "Your hiking journey can begin with curiosity about Brighton’s mountain setting. Silver Lake Loop is a requested First Steps outing in Big Cottonwood Canyon; a route-specific guide is being prepared once official information can be reviewed.",
+    "art": "lake",
+    "status": "pending",
+    "experience": "first-steps",
+    "landscapes": [],
+    "seasons": [],
+    "distance_miles": null,
+    "elevation_gain_feet": null,
+    "terrain": [],
+    "difficulty": null,
+    "trailhead": null,
+    "preparation": "Before choosing this route, confirm its demands and current access with the official land manager. Check weather and closures, bring water and layers, and share your plan.",
+    "hazards": null,
+    "sources": [],
+    "verified_on": null,
+    "location": "Brighton, Big Cottonwood Canyon",
+    "duration": null,
+    "route_type": null,
+    "surface": null,
+    "fees": null,
+    "access_restrictions": null,
+    "season_notes": null,
+    "weather_notes": null,
+    "access_status": "not-checked",
+    "access_note": "Current access has not been checked. Consult the official land manager before planning a visit.",
+    "official_links": [
+      {
+        "title": "Official land-manager website (route research pending)",
+        "url": "https://www.fs.usda.gov/r04/uwcnf"
+      }
+    ],
+    "verification_notes": "Official route review remains incomplete. No distance, elevation gain, duration, surface, fees, or seasonal recommendation is asserted. Location and selection for First Steps were supplied by the project owner.",
+    "field_sources": {}
+  },
+  {
+    "slug": "bryce-sunset-to-sunrise",
+    "title": "Sunset Point to Sunrise Point",
+    "subtitle": "Bryce Canyon National Park",
+    "description": "A big Bryce view without a big climb: follow the paved rim between Sunset and Sunrise Points and watch a whole amphitheater of hoodoos unfold below. Pause often, look for changing colors, and enjoy the kind of scenery that makes a first hike feel like an occasion. This guide covers only the short paved segment, not the full Rim Trail or a descent into the canyon.",
+    "art": "canyon",
+    "status": "reviewed",
+    "experience": "first-steps",
+    "landscapes": [
+      "desert"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "distance_miles": 1.0,
+    "elevation_gain_feet": 40,
+    "terrain": [
+      "maintained-path"
+    ],
+    "difficulty": "Easy (NPS); high elevation and winter ice change the demands",
+    "trailhead": "Sunset Point or Sunrise Point parking area, Bryce Canyon National Park",
+    "preparation": "Bring water, sun protection, layers, and shoes with grip. Remain on the paved rim segment for this outing; the full Rim Trail and routes descending below the rim have different demands.",
+    "hazards": "Rim viewpoints have steep drop-offs. Stay behind barriers and keep young hikers close. Snow and ice can make paved surfaces hazardous; NPS recommends winter traction devices. Do not treat an easy summer rating as a winter safety assessment.",
+    "sources": [
+      {
+        "title": "NPS: Sunset Point to Sunrise Point route, time, gain, surface, and restrictions",
+        "url": "https://www.nps.gov/thingstodo/sunset-point-to-sunrise-point-hike.htm"
+      },
+      {
+        "title": "NPS: easy hikes and lightning advice",
+        "url": "https://www.nps.gov/brca/planyourvisit/easy-hikes.htm"
+      },
+      {
+        "title": "NPS: winter planning and traction",
+        "url": "https://www.nps.gov/brca/planyourvisit/winter.htm"
+      },
+      {
+        "title": "NPS: Bryce Canyon fees and passes",
+        "url": "https://www.nps.gov/brca/planyourvisit/fees.htm"
+      }
+    ],
+    "verified_on": "2026-10-21",
+    "location": "Bryce Canyon National Park",
+    "duration": "About 1 hour (NPS; activity listing gives 20–60 minutes)",
+    "route_type": "Out and back; 0.5 mile each way",
+    "surface": "Paved concrete",
+    "fees": "A park entrance fee or qualifying pass is required; the official fee page lists a standard private-vehicle pass at $35. Check the linked schedule for your party, residency, pass eligibility, and current rules before travel.",
+    "access_restrictions": "Parking is available at either endpoint, but availability is not guaranteed. Oversized vehicles are not permitted in these parking areas while the park shuttle operates. Leashed pets must stay on paved surfaces. Check shuttle schedules, closures, and current conditions.",
+    "season_notes": "Editorial beginner planning seasons: spring, summer, and fall when the paved segment is free of snow and ice. The park also describes winter visits, but winter is excluded from the beginner filter because traction and different preparation may be needed. Spring and fall can still have snow.",
+    "weather_notes": "Bryce is a high-elevation park. Pack for cold and rapidly changing weather. Lightning is a year-round risk, especially in summer storms: if you hear thunder, seek shelter in a building or vehicle rather than remaining on the rim.",
+    "access_status": "not-checked",
+    "access_note": "Current access is not guaranteed by this source review. Check the official conditions and closures before you leave.",
+    "official_links": [],
+    "verification_notes": "NPS lists 1.0 mile round trip, 40 feet of elevation gain, and concrete surface. Its accessibility paragraph contains an inconsistent metric distance; this guide uses the route description’s 1.0 mile / 1.6 km total. Planning-season selections are editorial and conditional, not current access reports.",
+    "field_sources": {
+      "distance_miles": {
+        "url": "https://www.nps.gov/thingstodo/sunset-point-to-sunrise-point-hike.htm",
+        "note": "Official source gives the round-trip distance.",
+        "kind": "official"
+      },
+      "elevation_gain_feet": {
+        "url": "https://www.nps.gov/thingstodo/sunset-point-to-sunrise-point-hike.htm",
+        "note": "NPS publishes 40 feet of elevation gain for this segment.",
+        "kind": "official"
+      },
+      "duration": {
+        "url": "https://www.nps.gov/thingstodo/sunset-point-to-sunrise-point-hike.htm",
+        "note": "Official source publishes the walking time.",
+        "kind": "official"
+      },
+      "surface": {
+        "url": "https://www.nps.gov/thingstodo/sunset-point-to-sunrise-point-hike.htm",
+        "note": "See surface scope in the verification notes; do not infer wheelchair suitability.",
+        "kind": "official"
+      },
+      "seasons": {
+        "url": "https://www.nps.gov/thingstodo/sunset-point-to-sunrise-point-hike.htm",
+        "note": "Planning-season labels are conditional; see season notes for whether official or editorial.",
+        "kind": "editorial"
+      },
+      "landscapes": {
+        "url": "https://www.nps.gov/thingstodo/sunset-point-to-sunrise-point-hike.htm",
+        "note": "Editorial landscape categories for discovery, informed by the official route/park description.",
+        "kind": "editorial"
+      }
+    }
+  },
+  {
+    "slug": "jennys-canyon",
+    "title": "Jenny’s Canyon",
+    "subtitle": "Snow Canyon State Park",
+    "description": "A small adventure with a dramatic reveal: a sandy approach leads to a sculpted slot in Snow Canyon’s sandstone cliffs. Look closely at the wind-carved pockets and textures, or take the signed option toward the overlook if it suits your group. There is plenty to notice without needing a long day on the trail.",
+    "art": "canyon",
+    "status": "reviewed",
+    "experience": "first-steps",
+    "landscapes": [
+      "canyons",
+      "desert"
+    ],
+    "seasons": [
+      "spring",
+      "fall"
+    ],
+    "distance_miles": 0.5,
+    "elevation_gain_feet": null,
+    "terrain": [
+      "sand",
+      "rocky"
+    ],
+    "difficulty": "Easy (Utah State Parks)",
+    "trailhead": "Signed Jenny’s Canyon Trailhead in Snow Canyon State Park",
+    "preparation": "Wear shoes that grip uneven rock and are comfortable in deep sand. Bring water and sun protection even for this short outing. Follow the marked trail across the dry wash and choose the slot or overlook branch according to your group’s comfort.",
+    "hazards": "Deep sand and uneven rock can slow a group. A short canyon is still a place to avoid during storms or when flooding is possible; check official weather and park advice before entering. Extreme desert heat can overwhelm young hikers quickly.",
+    "sources": [
+      {
+        "title": "Utah State Parks: Jenny’s Canyon route description and 20-minute time",
+        "url": "https://stateparks.utah.gov/parks/snow-canyon/hiking/"
+      },
+      {
+        "title": "Utah State Parks: official trail guide and map, September 2026",
+        "url": "https://stateparks.utah.gov/wp-content/uploads/Snow-Canyon-Trail-Guide-Map-Brochure-Sept-2026.pdf"
+      },
+      {
+        "title": "Utah State Parks: Snow Canyon heat advice and park rules",
+        "url": "https://stateparks.utah.gov/parks/snow-canyon/"
+      },
+      {
+        "title": "Utah State Parks: Snow Canyon fees",
+        "url": "https://stateparks.utah.gov/parks/snow-canyon/park-fees/"
+      },
+      {
+        "title": "Utah State Parks: check current conditions",
+        "url": "https://stateparks.utah.gov/parks/snow-canyon/current-conditions/"
+      }
+    ],
+    "verified_on": "2026-10-21",
+    "location": "Snow Canyon State Park",
+    "duration": "About 20 minutes (Utah State Parks), plus time to pause",
+    "route_type": "Out and back, with a slot-canyon/overlook junction",
+    "surface": "Sand, including deep sand, with uneven rock, slopes, and steps",
+    "fees": "State-park day-use fee: the reviewed schedule lists $15 per vehicle for Utah residents and $20 for non-residents (up to eight people). Check the official fee page for your group and current rates.",
+    "access_restrictions": "Use designated, mapped trails only; off-trail travel harms fragile habitat. Check park hours and road/event closures. The park currently publishes a six-foot maximum dog-leash rule; consult current pet rules before bringing a dog.",
+    "season_notes": "Editorial beginner planning seasons: spring and fall, based on the park’s extreme-summer-heat warning. These are not guarantees of mild weather or canyon access. Confirm seasonal restrictions with the park; do not confuse this route with Johnson Canyon’s separate seasonal closure.",
+    "weather_notes": "The park warns of very hot summer conditions and advises avoiding activity between 11 a.m. and 7 p.m. in summer. Take heat advisories seriously, carry water, and skip the outing if conditions do not suit your group. Do not enter the slot during threatening rain or storms.",
+    "access_status": "not-checked",
+    "access_note": "Current access is not guaranteed by this source review. Check the official conditions and closures before you leave.",
+    "official_links": [],
+    "verification_notes": "The official trail page confirms 0.5 mile round trip, easy rating, 20 minutes, sandy approach, and uneven rock. The official brochure mentions slopes and steps. Neither reviewed source gives numeric cumulative elevation gain; it remains unknown. Storm avoidance is conservative planning guidance, not a claim about current flood risk.",
+    "field_sources": {
+      "distance_miles": {
+        "url": "https://stateparks.utah.gov/parks/snow-canyon/hiking/",
+        "note": "Official source gives the round-trip distance.",
+        "kind": "official"
+      },
+      "duration": {
+        "url": "https://stateparks.utah.gov/parks/snow-canyon/hiking/",
+        "note": "Official source publishes the walking time.",
+        "kind": "official"
+      },
+      "surface": {
+        "url": "https://stateparks.utah.gov/parks/snow-canyon/hiking/",
+        "note": "See surface scope in the verification notes; do not infer wheelchair suitability.",
+        "kind": "official"
+      },
+      "seasons": {
+        "url": "https://stateparks.utah.gov/parks/snow-canyon/",
+        "note": "Planning-season labels are conditional; see season notes for whether official or editorial.",
+        "kind": "editorial"
+      },
+      "landscapes": {
+        "url": "https://stateparks.utah.gov/parks/snow-canyon/hiking/",
+        "note": "Editorial landscape categories for discovery, informed by the official route/park description.",
+        "kind": "editorial"
+      }
+    }
+  },
+  {
+    "slug": "ladyfinger-point",
+    "title": "Ladyfinger Point",
+    "subtitle": "Antelope Island State Park",
+    "description": "Meet a different side of Utah: island scenery, open skies, and a short route toward Ladyfinger Point. The small distance makes room to slow down, notice the Great Salt Lake landscape, and enjoy being outdoors together. Keep wildlife encounters at a respectful distance and let the views be the reward.",
+    "art": "lake",
+    "status": "reviewed",
+    "experience": "first-steps",
+    "landscapes": [
+      "water",
+      "desert"
+    ],
+    "seasons": [
+      "spring",
+      "fall"
+    ],
+    "distance_miles": 0.5,
+    "elevation_gain_feet": null,
+    "terrain": [],
+    "difficulty": "First Steps editorial selection; official route-specific difficulty not located",
+    "trailhead": "Ladyfinger Point trail at the north end of Antelope Island; use the official trail map to locate parking and the trail",
+    "preparation": "Bring water, sun protection, and layers for changing conditions. Check the official map before leaving your vehicle. Allow extra time for views, wildlife, and any trail conditions that slow your group.",
+    "hazards": "Give free-ranging bison and other wildlife ample space; never approach or disturb them. Biting midges can be a problem in spring (the park identifies April–June); ordinary repellent is ineffective against these gnats, and fine-mesh head nets are recommended. Mosquitoes can also be present in warmer months.",
+    "sources": [
+      {
+        "title": "Utah State Parks: official trail map (Ladyfinger Point 0.25 mile one-way)",
+        "url": "https://stateparks.utah.gov/wp-content/uploads/Trail-Map-front-2026-ACCESSIBLE.pdf"
+      },
+      {
+        "title": "Utah State Parks: trail access rules",
+        "url": "https://stateparks.utah.gov/parks/antelope-island/trail-descriptions/"
+      },
+      {
+        "title": "Utah State Parks: wildlife and visitor information",
+        "url": "https://stateparks.utah.gov/parks/antelope-island/"
+      },
+      {
+        "title": "Utah State Parks: insect and current-conditions information",
+        "url": "https://stateparks.utah.gov/parks/antelope-island/current-conditions/"
+      },
+      {
+        "title": "Utah State Parks: Antelope Island fees and causeway rules",
+        "url": "https://stateparks.utah.gov/parks/antelope-island/park-fees/"
+      }
+    ],
+    "verified_on": "2026-10-21",
+    "location": "Antelope Island State Park",
+    "duration": "Roughly 20–40 minutes (editorial estimate for 0.5 mile, including stops; not a park-published time)",
+    "route_type": "Out and back; official map labels 0.25 mile one-way",
+    "surface": null,
+    "fees": "The official fee schedule lists $15 per standard vehicle (up to eight people). State annual-pass users should check the separate Davis County causeway-fee rules on the same page. Recheck rates before travel.",
+    "access_restrictions": "Backcountry access is restricted to designated trails; no cross-country travel. Dogs must remain leashed. Check park hours, special-event restrictions, and closures before visiting; rideshare pickup is not available according to the park.",
+    "season_notes": "Editorial beginner planning seasons: spring and fall. The park describes non-motorized recreation year-round, but that does not guarantee a clear, comfortable, or open trail. Spring insects can be intense; check the conditions page. Winter and summer demand their own weather assessment.",
+    "weather_notes": "Plan for exposed, changeable conditions: bring sun protection and a layer for wind or cold. Check the forecast and avoid heat, storms, snow, or ice that exceed your group’s abilities.",
+    "access_status": "not-checked",
+    "access_note": "Current access is not guaranteed by this source review. Check the official conditions and closures before you leave.",
+    "official_links": [],
+    "verification_notes": "The mapped 0.25-mile one-way route is doubled to show a 0.5-mile out-and-back outing. Duration and spring/fall planning selection are editorial, not park-published route recommendations. The reviewed official map and trail page do not provide route-specific surface, cumulative elevation gain, or a difficulty rating; those are explicitly left unconfirmed.",
+    "field_sources": {
+      "distance_miles": {
+        "url": "https://stateparks.utah.gov/wp-content/uploads/Trail-Map-front-2026-ACCESSIBLE.pdf",
+        "note": "Official map: 0.25 mile one-way, doubled for return outing.",
+        "kind": "derived"
+      },
+      "duration": {
+        "url": "https://stateparks.utah.gov/wp-content/uploads/Trail-Map-front-2026-ACCESSIBLE.pdf",
+        "note": "Editorial walking-time estimate based on the sourced return distance; not an official duration.",
+        "kind": "editorial"
+      },
+      "seasons": {
+        "url": "https://stateparks.utah.gov/parks/antelope-island/current-conditions/",
+        "note": "Planning-season labels are conditional; see season notes for whether official or editorial.",
+        "kind": "editorial"
+      },
+      "landscapes": {
+        "url": "https://stateparks.utah.gov/wp-content/uploads/Trail-Map-front-2026-ACCESSIBLE.pdf",
+        "note": "Editorial landscape categories for discovery, informed by the official route/park description.",
+        "kind": "editorial"
+      }
+    }
+  },
+  {
+    "slug": "sand-dune-arch",
+    "title": "Sand Dune Arch",
+    "subtitle": "Arches National Park",
+    "description": "Follow a sandy passage between tall sandstone fins to find an arch tucked out of sight. The short approach feels like discovering a little outdoor room, with textures and shapes worth lingering over. This guide covers Sand Dune Arch and back only; continuing to Broken Arch makes a different, longer outing.",
+    "art": "canyon",
+    "status": "reviewed",
+    "experience": "first-steps",
+    "landscapes": [
+      "desert"
+    ],
+    "seasons": [
+      "spring",
+      "fall"
+    ],
+    "distance_miles": 0.4,
+    "elevation_gain_feet": null,
+    "terrain": [
+      "sand",
+      "rocky"
+    ],
+    "difficulty": "Easy (NPS), with deep sand and a narrow passage",
+    "trailhead": "Sand Dune Arch parking area, Arches National Park",
+    "preparation": "Wear shoes suited to deep sand and rock. Bring water even for a short walk, and turn back if the narrow passage or sandy footing does not suit your group. The route is not wheelchair accessible according to NPS.",
+    "hazards": "Do not climb or jump from the arch. Deep sand, rock, and the narrow passage can be awkward. Summer heat and sun exposure, sudden storms, and winter snow/ice can change the outing substantially.",
+    "sources": [
+      {
+        "title": "NPS: Sand Dune Arch route, time, elevation change, and pet rules",
+        "url": "https://www.nps.gov/places/sand-dune-arch-trail.htm"
+      },
+      {
+        "title": "NPS: physical accessibility, deep sand, bedrock, and narrow passage",
+        "url": "https://www.nps.gov/arch/planyourvisit/physical-mobility.htm"
+      },
+      {
+        "title": "NPS: Arches weather and seasons",
+        "url": "https://www.nps.gov/arch/planyourvisit/weather.htm"
+      },
+      {
+        "title": "NPS: Arches safety",
+        "url": "https://www.nps.gov/arch/planyourvisit/safety.htm"
+      },
+      {
+        "title": "NPS: Arches fees and passes",
+        "url": "https://www.nps.gov/arch/planyourvisit/fees.htm"
+      }
+    ],
+    "verified_on": "2026-10-21",
+    "location": "Arches National Park",
+    "duration": "15–30 minutes (NPS)",
+    "route_type": "Out and back to Sand Dune Arch only",
+    "surface": "Deep sand and bedrock; a boulder constricts a narrow passage",
+    "fees": "A park entrance fee or qualifying pass is required. NPS lists a standard private-vehicle entrance pass at $30; check the current fee schedule, any applicable additional fees, and entrance requirements for your dates.",
+    "access_restrictions": "Dogs are not allowed on this trail; service animals follow NPS rules. Do not climb on arches, damage rock, or leave designated routes. Check the park’s current timed-entry/reservation requirements and alerts for your dates rather than relying on a prior year’s rules.",
+    "season_notes": "Spring and fall are the park’s temperate seasons, used here as beginner planning filters. Summer temperatures often exceed 100°F, and even small amounts of winter snow or ice can make trails impassable. Filters do not imply current access.",
+    "weather_notes": "Carry water and sun protection. Late-summer monsoon storms can bring flash floods, and rain or snow can close roads. Sheltering between sandstone walls does not make the approach or route safe during severe weather.",
+    "access_status": "not-checked",
+    "access_note": "Current access is not guaranteed by this source review. Check the official conditions and closures before you leave.",
+    "official_links": [],
+    "verification_notes": "NPS lists 0.4 mile round trip, 15–30 minutes, and 0 feet of elevation change. Elevation change is not presented as a measured cumulative gain: the gain filter remains unknown, and the source wording is shown. Broken Arch distances vary by route and are intentionally excluded.",
+    "field_sources": {
+      "distance_miles": {
+        "url": "https://www.nps.gov/places/sand-dune-arch-trail.htm",
+        "note": "Official source gives the round-trip distance.",
+        "kind": "official"
+      },
+      "duration": {
+        "url": "https://www.nps.gov/places/sand-dune-arch-trail.htm",
+        "note": "Official source publishes the walking time.",
+        "kind": "official"
+      },
+      "surface": {
+        "url": "https://www.nps.gov/arch/planyourvisit/physical-mobility.htm",
+        "note": "See surface scope in the verification notes; do not infer wheelchair suitability.",
+        "kind": "official"
+      },
+      "seasons": {
+        "url": "https://www.nps.gov/arch/planyourvisit/weather.htm",
+        "note": "Planning-season labels are conditional; see season notes for whether official or editorial.",
+        "kind": "official"
+      },
+      "landscapes": {
+        "url": "https://www.nps.gov/places/sand-dune-arch-trail.htm",
+        "note": "Editorial landscape categories for discovery, informed by the official route/park description.",
+        "kind": "editorial"
+      }
+    },
+    "elevation_display": "NPS lists 0 ft elevation change; cumulative gain is not separately published"
+  },
+  {
+    "slug": "capitol-reef-sunset-point",
+    "title": "Sunset Point",
+    "subtitle": "Capitol Reef National Park",
+    "description": "Watch the Waterpocket Fold’s cliffs change color as the light softens. This short walk offers a wide-open panorama and a reason to pause together, whether you visit in daylight or plan carefully for sunset. Bring a headlamp if you stay late: the return is part of the adventure too.",
+    "art": "canyon",
+    "status": "reviewed",
+    "experience": "first-steps",
+    "landscapes": [
+      "desert"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "distance_miles": 0.8,
+    "elevation_gain_feet": null,
+    "terrain": [
+      "maintained-path"
+    ],
+    "difficulty": "Easy (NPS): uneven ground, fairly level",
+    "trailhead": "End of the dirt Panorama Point Road, about one mile from the highway turnoff at Panorama Point; consult the official NPS route information",
+    "preparation": "Bring water, sun protection, and a map. If visiting for sunset, allow time to walk both directions, pack layers, and carry a headlamp rather than relying only on a phone light.",
+    "hazards": "Uneven ground and fading light can make the return harder. The park warns about intense summer sun, monsoon storms, and flash floods. Winter ice, snow, and cold can change a short trail’s demands; check conditions before choosing it.",
+    "sources": [
+      {
+        "title": "NPS: Capitol Reef trail guide, one-way distance and elevation change",
+        "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm"
+      },
+      {
+        "title": "NPS: Watch the Sunset, access directions and year-round season",
+        "url": "https://www.nps.gov/thingstodo/watch-the-sunset.htm"
+      },
+      {
+        "title": "NPS: easy/moderate trails and unpaved surfaces",
+        "url": "https://www.nps.gov/thingstodo/hike-an-easy-or-moderate-trail.htm"
+      },
+      {
+        "title": "NPS: Capitol Reef safety",
+        "url": "https://www.nps.gov/care/planyourvisit/safety.htm"
+      },
+      {
+        "title": "NPS: Capitol Reef fees and passes",
+        "url": "https://www.nps.gov/care/planyourvisit/fees.htm"
+      }
+    ],
+    "verified_on": "2026-10-21",
+    "location": "Capitol Reef National Park",
+    "duration": "About 30–45 minutes walking (editorial estimate for 0.8 mile); add time to watch the sunset",
+    "route_type": "Out and back; NPS lists 0.4 mile one-way",
+    "surface": "Unpaved; NPS describes these easy trails as uneven but fairly level. Exact route-specific surface composition not published in the reviewed guide.",
+    "fees": "NPS’s reviewed sunset-activity and fee pages say fees apply for recreating in the park; the general fee page lists $20 for a standard private vehicle. Confirm the fee/pass requirements for your route and full itinerary with NPS before visiting; this guide does not promise fee-free access to the viewpoint.",
+    "access_restrictions": "Use the designated trail and confirm dirt-road and trail access with the park. Pets are not permitted on this hike according to the NPS sunset activity page. This guide covers Sunset Point at Capitol Reef, not the similarly named viewpoint at Bryce Canyon.",
+    "season_notes": "NPS lists the sunset-viewing activity year-round. All four seasons are therefore searchable, but this is not a promise of beginner-friendly conditions on any date. Avoid extreme heat, storms, or icy footing; winter can require different skills and equipment.",
+    "weather_notes": "Plan for all types of weather and carry water. For sunset, bring a warm layer for the return and do not remain at exposed viewpoints during lightning. Dirt-road access can be affected by weather; check current road information.",
+    "access_status": "not-checked",
+    "access_note": "Current access is not guaranteed by this source review. Check the official conditions and closures before you leave.",
+    "official_links": [],
+    "verification_notes": "NPS lists 0.4 mile one-way; this guide doubles it for a 0.8-mile return outing. The published elevation change is a less-than-50-foot bound, not an exact cumulative gain, so no numeric gain is invented or used in gain filtering. Duration is an editorial walking-time estimate, excluding sunset viewing. General NPS surface descriptions cover multiple trails; exact composition is not asserted.",
+    "field_sources": {
+      "distance_miles": {
+        "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm",
+        "note": "NPS: 0.4 mile one-way, doubled for return outing.",
+        "kind": "derived"
+      },
+      "duration": {
+        "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm",
+        "note": "Editorial walking-time estimate based on the sourced return distance; not an official duration.",
+        "kind": "editorial"
+      },
+      "surface": {
+        "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm",
+        "note": "See surface scope in the verification notes; do not infer wheelchair suitability.",
+        "kind": "official"
+      },
+      "seasons": {
+        "url": "https://www.nps.gov/thingstodo/watch-the-sunset.htm",
+        "note": "Planning-season labels are conditional; see season notes for whether official or editorial.",
+        "kind": "official"
+      },
+      "landscapes": {
+        "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm",
+        "note": "Editorial landscape categories for discovery, informed by the official route/park description.",
+        "kind": "editorial"
+      }
+    },
+    "elevation_display": "Less than 50 ft elevation change (NPS); cumulative gain not published"
+  },
+  {
+    "slug": "bridal-veil-falls",
+    "title": "Bridal Veil Falls",
+    "subtitle": "Provo Canyon",
+    "description": "A waterfall can be a wonderful reason to take a first walk outdoors. Bridal Veil Falls in Provo Canyon is a requested First Steps outing, but construction makes confirming the available route and parking especially important. This draft is not a recommendation to visit before access is checked.",
+    "art": "lake",
+    "status": "pending",
+    "experience": "first-steps",
+    "landscapes": [],
+    "seasons": [],
+    "distance_miles": null,
+    "elevation_gain_feet": null,
+    "terrain": [],
+    "difficulty": null,
+    "trailhead": null,
+    "preparation": "Before choosing this route, confirm its demands and current access with the official land manager. Check weather and closures, bring water and layers, and share your plan.",
+    "hazards": null,
+    "sources": [],
+    "verified_on": null,
+    "location": "Provo Canyon",
+    "duration": null,
+    "route_type": null,
+    "surface": null,
+    "fees": null,
+    "access_restrictions": null,
+    "season_notes": null,
+    "weather_notes": null,
+    "access_status": "manual-check",
+    "access_note": "Manual access verification required: construction may affect trail and parking access. The project owner flagged ongoing construction; the current extent, dates, and available route have not been independently verified. Confirm directly with the land manager before visiting.",
+    "official_links": [
+      {
+        "title": "Utah County Public Works (official park information; access review required)",
+        "url": "https://publicworks.utahcounty.gov"
+      }
+    ],
+    "verification_notes": "Official route review remains incomplete. No distance, elevation gain, duration, surface, fees, or seasonal recommendation is asserted. Location and selection for First Steps were supplied by the project owner.",
+    "field_sources": {}
+  },
+  {
+    "slug": "huber-grove-trail",
+    "title": "Huber Grove Trail",
+    "subtitle": "Wasatch Mountain State Park",
+    "description": "Let your first outdoor adventures include a little history. Huber Grove brings together a self-guided nature trail, an aspen grove, an old orchard, and the story of early life in the Heber Valley. Take your time noticing the landscape and historic setting rather than treating the walk as a race.",
+    "art": "foothill",
+    "status": "reviewed",
+    "experience": "first-steps",
+    "landscapes": [
+      "mountains"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "distance_miles": null,
+    "elevation_gain_feet": null,
+    "terrain": [],
+    "difficulty": "First Steps editorial selection; official route-specific difficulty not located",
+    "trailhead": "Visitor Center trail network, Wasatch Mountain State Park, Midway; confirm the Huber Grove route with visitor center staff",
+    "preparation": "Stop at the visitor center to confirm the exact route, distance, footing, and return time before starting. Bring water, comfortable walking shoes, and layers. Stay on marked routes and respect historic structures and orchard rules.",
+    "hazards": "Route-specific hazards and surface accessibility have not been fully documented in the reviewed official sources. Plan conservatively around wet or muddy footing, cold, snow, and ice; ask staff whether conditions suit your group.",
+    "sources": [
+      {
+        "title": "Utah State Parks: Huber Grove in the visitor-center trail network",
+        "url": "https://stateparks.utah.gov/parks/wasatch-mountain/things-to-do/"
+      },
+      {
+        "title": "Utah State Parks: brochure, nature trail, aspen grove, and historic orchard",
+        "url": "https://stateparks.utah.gov/wp-content/uploads/wasatch-digital-brochure-2026.pdf"
+      },
+      {
+        "title": "Utah State Parks: Huber Grove history",
+        "url": "https://stateparks.utah.gov/parks/wasatch-mountain/history/"
+      },
+      {
+        "title": "Utah State Parks: Wasatch Mountain fees",
+        "url": "https://stateparks.utah.gov/parks/wasatch-mountain/park-fees/"
+      },
+      {
+        "title": "Utah State Parks: check current trail conditions",
+        "url": "https://stateparks.utah.gov/parks/wasatch-mountain/current-conditions/"
+      }
+    ],
+    "verified_on": "2026-10-21",
+    "location": "Wasatch Mountain State Park",
+    "duration": null,
+    "route_type": "Visitor-center-area nature trail; exact route variant needs confirmation",
+    "surface": null,
+    "fees": "The reviewed state-park fee schedule lists $10 day use per car (up to eight people), with a senior rate listed separately. Confirm which pass or fee applies to your visit and current rates with the park.",
+    "access_restrictions": "The park lists Huber Grove among its visitor-center hiking trails. Confirm the open route, visitor-center hours, historic-area access, and any pet or seasonal restrictions before visiting. Do not enter structures or pick fruit without current permission.",
+    "season_notes": "Editorial beginner planning seasons: spring, summer, and fall in suitable walking conditions. The park describes winter activities separately; that does not establish an easy winter walking route to Huber Grove. Check snow and mud conditions even in spring or fall.",
+    "weather_notes": "Check the forecast and current trail conditions with the park. Pack layers for changing mountain weather and avoid outings during storms or when snow/ice would require equipment or skills your group does not have.",
+    "access_status": "not-checked",
+    "access_note": "Current access is not guaranteed by this source review. Check the official conditions and closures before you leave.",
+    "official_links": [],
+    "verification_notes": "Official park sources confirm Huber Grove, its historic setting, the self-guided nature trail through aspen/orchard, and its inclusion in the visitor-center trail network. They do not publish the exact route distance, cumulative elevation gain, walking duration, or surface in the reviewed material; all remain explicitly unconfirmed. Planning-season labels are editorial, conditional guidance rather than a route-specific official recommendation.",
+    "field_sources": {
+      "seasons": {
+        "url": "https://stateparks.utah.gov/parks/wasatch-mountain/things-to-do/",
+        "note": "Planning-season labels are conditional; see season notes for whether official or editorial.",
+        "kind": "editorial"
+      },
+      "landscapes": {
+        "url": "https://stateparks.utah.gov/parks/wasatch-mountain/things-to-do/",
+        "note": "Editorial landscape categories for discovery, informed by the official route/park description.",
+        "kind": "editorial"
+      }
+    }
   }
 ]

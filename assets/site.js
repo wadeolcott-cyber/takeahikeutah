@@ -30,6 +30,9 @@ if (filterForm) {
       card.hidden = !(tagsMatch && distanceMatch && elevationMatch);
       if (!card.hidden) visible++;
     });
+    document.querySelectorAll('.result-group').forEach(group => {
+      group.hidden = ![...group.querySelectorAll('.hike-card')].some(card => !card.hidden);
+    });
     count.textContent = `${visible} of ${cards.length} entries shown`;
     empty.hidden = visible !== 0;
     if (updateURL) {
