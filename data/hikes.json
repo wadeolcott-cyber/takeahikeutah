@@ -17,7 +17,8 @@
     "preparation": "Check the official land manager’s route information, weather, closures, access rules, and current conditions before choosing an outing.",
     "hazards": null,
     "sources": [],
-    "verified_on": null
+    "verified_on": null,
+    "photo": null
   },
   {
     "slug": "canyon-walk",
@@ -37,7 +38,8 @@
     "preparation": "Check the official land manager’s route information, weather, closures, access rules, and current conditions before choosing an outing.",
     "hazards": null,
     "sources": [],
-    "verified_on": null
+    "verified_on": null,
+    "photo": null
   },
   {
     "slug": "lakeside-stroll",
@@ -57,7 +59,8 @@
     "preparation": "Check the official land manager’s route information, weather, closures, access rules, and current conditions before choosing an outing.",
     "hazards": null,
     "sources": [],
-    "verified_on": null
+    "verified_on": null,
+    "photo": null
   },
   {
     "slug": "silver-lake-loop",
@@ -95,7 +98,8 @@
       }
     ],
     "verification_notes": "Official route review remains incomplete. No distance, elevation gain, duration, surface, fees, or seasonal recommendation is asserted. Location and selection for First Steps were supplied by the project owner.",
-    "field_sources": {}
+    "field_sources": {},
+    "photo": null
   },
   {
     "slug": "bryce-sunset-to-sunrise",
@@ -184,7 +188,8 @@
         "note": "Editorial landscape categories for discovery, informed by the official route/park description.",
         "kind": "editorial"
       }
-    }
+    },
+    "photo": null
   },
   {
     "slug": "jennys-canyon",
@@ -273,7 +278,8 @@
         "note": "Editorial landscape categories for discovery, informed by the official route/park description.",
         "kind": "editorial"
       }
-    }
+    },
+    "photo": null
   },
   {
     "slug": "ladyfinger-point",
@@ -353,7 +359,8 @@
         "note": "Editorial landscape categories for discovery, informed by the official route/park description.",
         "kind": "editorial"
       }
-    }
+    },
+    "photo": null
   },
   {
     "slug": "sand-dune-arch",
@@ -442,7 +449,8 @@
         "kind": "editorial"
       }
     },
-    "elevation_display": "NPS lists 0 ft elevation change; cumulative gain is not separately published"
+    "elevation_display": "NPS lists 0 ft elevation change; cumulative gain is not separately published",
+    "photo": null
   },
   {
     "slug": "capitol-reef-sunset-point",
@@ -532,7 +540,8 @@
         "kind": "editorial"
       }
     },
-    "elevation_display": "Less than 50 ft elevation change (NPS); cumulative gain not published"
+    "elevation_display": "Less than 50 ft elevation change (NPS); cumulative gain not published",
+    "photo": null
   },
   {
     "slug": "bridal-veil-falls",
@@ -595,7 +604,8 @@
         "note": "Editorial maintained-path category for the intended paved viewing approach only.",
         "kind": "editorial"
       }
-    }
+    },
+    "photo": null
   },
   {
     "slug": "huber-grove-trail",
@@ -666,6 +676,7 @@
         "note": "Editorial landscape categories for discovery, informed by the official route/park description.",
         "kind": "editorial"
       }
-    }
+    },
+    "photo": null
   }
 ]
