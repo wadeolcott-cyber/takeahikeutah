@@ -541,7 +541,18 @@
       }
     },
     "elevation_display": "Less than 50 ft elevation change (NPS); cumulative gain not published",
-    "photo": null
+    "photo": {
+      "src": "assets/photos/capitol-reef-sunset-point.webp",
+      "alt": "Sunset lights layered red and cream cliffs at Capitol Reef, with a sandstone outcrop in the foreground and distant mountains beneath pastel clouds.",
+      "title": "Sunset from Sunset Point",
+      "photographer": "NPS / Artist-in-Residence Kurt Wheeler",
+      "source_url": "https://www.nps.gov/thingstodo/watch-the-sunset.htm",
+      "license": "Public domain under NPS credited-media usage policy; no claim to original U.S. Government works",
+      "license_url": "https://www.nps.gov/aboutus/disclaimer.htm",
+      "modifications": "Converted from the supplied JPG to WebP and compressed; embedded metadata removed; no additional crop or color edits",
+      "rights_evidence": "Owner supplied Sunset Point.zip and requested use. Original NPS page credits NPS / Artist-in-Residence Kurt Wheeler without a copyright symbol. Reviewed NPS multimedia usage policy at https://www.nps.gov/media/multimedia-search.htm?q=erde (NPS-credited media without copyright symbols are public domain), together with the NPS ownership disclaimer. Review: October 21, 2026 (America/Denver).",
+      "approved": true
+    }
   },
   {
     "slug": "bridal-veil-falls",
