@@ -21,8 +21,10 @@ def e(value):
 def validate():
     slugs = set()
     for hike in HIKES:
-        if hike.get('photo') is not None:
-            validate_photo(hike['photo'])
+        assert isinstance(hike.get('additional_photos', []), list), 'Additional photos must be a list'
+        assert not hike.get('additional_photos') or hike.get('photo'), 'Gallery requires a primary photo'
+        for photo in hike_photos(hike):
+            validate_photo(photo)
         slug = hike['slug']
         assert re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug), 'Invalid slug'
         assert slug not in slugs, 'Duplicate slug'
@@ -106,23 +108,32 @@ def photo_credit(photo):
             f'Modifications: {e(photo["modifications"])}.</span>')
 
 
+def hike_photos(hike):
+    return ([hike['photo']] if hike.get('photo') else []) + hike.get('additional_photos', [])
+
+
+def photo_figure(photo):
+    width, height = validate_photo(photo)
+    caption = f'<p>{e(photo["caption"])}</p>' if photo.get('caption') else ''
+    return (f'<figure class="hike-photo"><img src="{e(photo["src"])}" alt="{e(photo["alt"])}" '
+            f'width="{width}" height="{height}" loading="lazy" decoding="async">'
+            f'<figcaption>{caption}{photo_credit(photo)}</figcaption></figure>')
+
+
 def hike_photo(hike):
     photo = hike.get('photo')
     if not photo:
         return f'<div class="detail-art {e(hike["art"])}" role="img" aria-label="Image placeholder: illustration, not a photograph of this trail"><span class="image-placeholder-label">Illustration · trail photograph coming later</span></div>'
-    width, height = validate_photo(photo)
-    return (f'<figure class="hike-photo"><img src="{e(photo["src"])}" alt="{e(photo["alt"])}" '
-            f'width="{width}" height="{height}" loading="lazy" decoding="async">'
-            f'<figcaption>{photo_credit(photo)}</figcaption></figure>')
+    return ''.join(photo_figure(photo) for photo in hike_photos(hike))
 
 
 def photo_credits():
-    entries = ''.join(f'<article><h2><a href="{e(h["slug"])}.html">{e(h["title"])}</a></h2><p>{photo_credit(h["photo"])}</p></article>' for h in HIKES if h.get('photo'))
+    entries = ''.join(f'<article><h2><a href="{e(h["slug"])}.html">{e(h["title"])}</a></h2><p>{photo_credit(photo)}</p></article>' for h in HIKES for photo in hike_photos(h))
     return ('<section class="wrap section"><h1 class="page-title">Photo Credits</h1>'
             '<p class="lede">Thank you to the photographers whose work helps us explore Utah.</p>'
             '<div class="reading"><h2>Homepage: Bryce Canyon</h2>'
             '<p>Photo by the Take a Hike Utah site owner, who confirmed personally taking this photograph and authorized its use on this website. Copyright remains with the photographer; no public reuse license is granted. Source: owner-supplied WebP. Display modifications: responsive sizing and cropping for the homepage layout. Earlier editing history has not been recorded. Contact the site owner for reuse permission.</p>'
-            '<h2>Trail photographs</h2>' + (entries or '<p>No trail photographs have been added yet. Hike pages currently use illustrations, clearly labeled as placeholders.</p>') +
+            '<h2 id="owner-photos">Owner-supplied photographs</h2><p>Personal photos credited to the Take a Hike Utah site owner are used with the photographer’s permission. Copyright remains with the photographer; all rights reserved. No public reuse license is granted. Contact the site owner for reuse permission.</p><h2>Trail photographs</h2>' + (entries or '<p>No trail photographs have been added yet. Hike pages currently use illustrations, clearly labeled as placeholders.</p>') +
             '<h2>Illustrations</h2><p>The landscape illustration and site icon were created for this website. They are not photographs of individual trails. No public reuse license is granted here.</p>'
             '<p>A credit is not permission to reuse an image. Consult the linked license and original source, and obtain any additional permissions required for your use.</p></div></section>')
 
@@ -152,8 +163,15 @@ def card(hike, index):
     data = ' '.join(f'data-{key}="{e(value)}"' for key, value in attrs.items())
     badge = {'concept': 'SAMPLE ROUTE', 'pending': 'RESEARCH PENDING', 'reviewed': 'SOURCE-REVIEWED', 'verified': 'TRAIL GUIDE'}[hike['status']]
     stage = LABELS['stages'].get(hike['experience'], 'Experience to be assessed')
+    photo = hike.get('photo')
+    thumbnail = ''
+    if photo:
+        width, height = validate_photo(photo)
+        thumbnail = f'<img class="card-photo" src="{e(photo["src"])}" alt="" width="{width}" height="{height}" loading="lazy" decoding="async">'
+    art_class = 'has-photo' if photo else e(hike['art'])
+    image_note = 'Photo · credits in guide' if photo else 'Illustration · photo placeholder'
     return f'''<article class="card hike-card" {data}>
-<a class="card-art {e(hike['art'])}" href="{e(hike['slug'])}.html" aria-label="Explore {e(hike['title'])}"><span class="pill">{badge}</span><span class="art-number">{index:02}</span><span class="card-image-note">Illustration · photo placeholder</span></a>
+<a class="card-art {art_class}" href="{e(hike['slug'])}.html" aria-label="Explore {e(hike['title'])}">{thumbnail}<span class="pill">{badge}</span><span class="art-number">{index:02}</span><span class="card-image-note">{image_note}</span></a>
 <div class="card-body"><p class="eyebrow">{e(hike['subtitle'])}</p><h3><a href="{e(hike['slug'])}.html">{e(hike['title'])}</a></h3><p>{e(hike['description'])}</p>{access_warning(hike)}<p class="card-meta">{e(stage)}{' · concept only' if hike['status'] == 'concept' else ''}</p><div class="card-bottom"><span>{'View route details' if hike['status'] in {'reviewed', 'verified'} else 'Trail details unverified'}</span><a href="{e(hike['slug'])}.html" aria-label="View {e(hike['title'])}">↗</a></div></div></article>'''
 
 

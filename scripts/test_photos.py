@@ -45,6 +45,16 @@ class Photos(unittest.TestCase):
         image.write_bytes(image.read_bytes() + bytes(400_001))
         with self.assertRaises(AssertionError): build.validate_photo(self.photo)
 
+    def test_gallery_credits_and_card_photo(self):
+        h = dict(slug='test', title='Test hike', photo=self.photo, additional_photos=[dict(self.photo, title='Second view')])
+        build.HIKES = [h]
+        self.assertEqual(build.hike_photo(h).count('<figure'), 2)
+        self.assertIn('Second view', build.photo_credits())
+        h.update(experience='first-steps', landscapes=[], seasons=[], terrain=[], distance_miles=None, elevation_gain_feet=None, status='reviewed', subtitle='Location', description='Guide', art='lake')
+        html = build.card(h, 1)
+        self.assertIn('class="card-photo"', html)
+        self.assertNotIn('Illustration · photo placeholder', html)
+
     def test_placeholder_and_empty_credits(self):
         build.HIKES = []
         self.assertIn('No trail photographs', build.photo_credits())

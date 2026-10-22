@@ -189,7 +189,34 @@
         "kind": "editorial"
       }
     },
-    "photo": null
+    "photo": {
+      "src": "assets/photos/bryce-sunset-point.webp",
+      "alt": "Pale orange Bryce Canyon hoodoos and wooded slopes beneath a dramatic cloudy sky at Sunset Point.",
+      "title": "Bryce Canyon from Sunset Point",
+      "caption": "Sunset Point — one end of the paved Bryce Canyon rim walk.",
+      "photographer": "Take a Hike Utah site owner",
+      "source_url": "https://takeahikeutah.org/photo-credits#owner-photos",
+      "license": "Used with photographer permission; all rights reserved",
+      "license_url": "https://takeahikeutah.org/photo-credits#owner-photos",
+      "modifications": "Cropped to 16:10, resized to 1440 × 900, and compressed as WebP; embedded metadata removed; no color edits",
+      "rights_evidence": "Original personal photograph supplied by the site owner in Hikes.zip; owner explicitly authorized cropping, conversion, and placement on the site on October 22, 2026 (America/Denver).",
+      "approved": true
+    },
+    "additional_photos": [
+      {
+        "src": "assets/photos/bryce-sunrise-point.webp",
+        "alt": "Layered orange hoodoos and light sandstone formations seen from Sunrise Point under gray clouds.",
+        "title": "Bryce Canyon from Sunrise Point",
+        "caption": "Sunrise Point — the other end of the paved rim walk. These are Bryce Canyon viewpoints, distinct from Sunset Point at Capitol Reef.",
+        "photographer": "Take a Hike Utah site owner",
+        "source_url": "https://takeahikeutah.org/photo-credits#owner-photos",
+        "license": "Used with photographer permission; all rights reserved",
+        "license_url": "https://takeahikeutah.org/photo-credits#owner-photos",
+        "modifications": "Cropped to 16:10, resized to 1440 × 900, and compressed as WebP; embedded metadata removed; no color edits",
+        "rights_evidence": "Original personal photograph supplied by the site owner in Hikes.zip; owner explicitly authorized cropping, conversion, and placement on the site on October 22, 2026 (America/Denver).",
+        "approved": true
+      }
+    ]
   },
   {
     "slug": "jennys-canyon",
@@ -279,7 +306,19 @@
         "kind": "editorial"
       }
     },
-    "photo": null
+    "photo": {
+      "src": "assets/photos/jennys-canyon.webp",
+      "alt": "Orange and dark sandstone outcrops beneath sweeping clouds in the landscape near Jenny’s Canyon.",
+      "title": "Landscape near Jenny’s Canyon",
+      "caption": "Surrounding landscape near Jenny’s Canyon, supplied by the site owner; this photo does not show the slot-canyon interior.",
+      "photographer": "Take a Hike Utah site owner",
+      "source_url": "https://takeahikeutah.org/photo-credits#owner-photos",
+      "license": "Used with photographer permission; all rights reserved",
+      "license_url": "https://takeahikeutah.org/photo-credits#owner-photos",
+      "modifications": "Cropped to 16:10, resized to 1440 × 900, and compressed as WebP; embedded metadata removed; no color edits",
+      "rights_evidence": "Original personal photograph supplied by the site owner in Hikes.zip; owner explicitly authorized cropping, conversion, and placement on the site on October 22, 2026 (America/Denver).",
+      "approved": true
+    }
   },
   {
     "slug": "ladyfinger-point",
