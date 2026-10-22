@@ -10,3 +10,5 @@
 .hike-photo{margin:0 0 28px}.hike-photo img{display:block;width:100%;height:auto;max-height:600px;object-fit:contain;border-radius:5px;background:#eeeee5}.hike-photo figcaption{font-size:12px;color:var(--muted);margin-top:10px}.hike-photo figcaption a,.reading article a{text-decoration:underline;text-underline-offset:3px}
 
 .card-art.has-photo{background-image:none}.card-photo{display:block;width:100%;height:100%;object-fit:cover}.has-photo .card-image-note{background:rgba(24,44,34,.85);color:white}.hike-photo figcaption p{margin:0 0 6px}
+
+.about-page .about-intro{margin-top:0}.about-principles{margin-block:50px}.principles-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.principles-grid .journey-card{min-width:0}.about-page .story-photo{margin-block:32px}.about-page .story-photo img{max-height:none}.about-page section[id],.about-page h2[id]{scroll-margin-top:24px}@media(max-width:700px){.principles-grid{grid-template-columns:1fr;gap:18px}.about-principles{margin-block:36px}}
