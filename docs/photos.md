@@ -40,3 +40,9 @@ The image retains its natural aspect ratio, has explicit dimensions to reduce la
 ## Personal hike photos added October 22, 2026
 
 The owner supplied JennysCanyon.jpg, SunsetPoint_Bryce.jpg, and SunrisePoint_Bryce.jpg in Hikes.zip and explicitly authorized cropping/conversion and site placement. The three local WebP derivatives are credited to the site owner, with all rights reserved and permission limited to this site. No public reuse license is inferred. Crops use a 16:10 frame and preserve the main landscape; no color edits were made. GPS and embedded metadata were removed. Original files are not committed. Jenny’s Canyon is captioned as the surrounding landscape rather than the slot interior. Both Bryce images are shown on the Sunset-to-Sunrise guide.
+
+## Hikes2 source review — October 22, 2026
+
+- Bridal Veil Falls: supplied lower-resolution version of the Commons photo by An Errant Knight, matched to the linked file page. Original and WebP derivative are distributed under CC BY-SA 4.0; source, photographer, license link, and modifications are displayed. No additional restrictions apply to this licensed photo. Keep the historical/current-access distinction.
+- Sand Dune Arch: supplied photo matched to the NPS route page, credited NPS/Kayla Vogt without a copyright symbol. Public-domain use follows NPS credited-media usage guidance; source, credit, and conversion are recorded. Retain its winter-condition caption.
+- SilverlakeLoop.jpg: source page now readable and lists several photographers (including Teresa Prendusi and Larry Stritch). The exact supplied image has not yet been matched to one credited asset or its rights record. A local WebP is prepared in the scratch workspace only; neither original nor derivative is committed or published. Do not infer that all images on a government site are government works. Confirm the exact asset credit and reuse terms before adding its photo record.

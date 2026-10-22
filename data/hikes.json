@@ -489,7 +489,19 @@
       }
     },
     "elevation_display": "NPS lists 0 ft elevation change; cumulative gain is not separately published",
-    "photo": null
+    "photo": {
+      "src": "assets/photos/sand-dune-arch.webp",
+      "alt": "Sand Dune Arch and surrounding orange sandstone walls with patches of winter snow on the ground and rock.",
+      "title": "Sand Dune Arch in winter",
+      "photographer": "NPS / Kayla Vogt",
+      "source_url": "https://www.nps.gov/places/sand-dune-arch-trail.htm",
+      "license": "Public domain under NPS credited-media usage policy; no claim to original U.S. Government works",
+      "license_url": "https://www.nps.gov/aboutus/disclaimer.htm",
+      "modifications": "Converted supplied JPG to WebP and compressed; embedded metadata removed; no additional crop, resize, or color edits",
+      "rights_evidence": "Owner supplied Hikes2.zip and requested use. Exact photograph matched to NPS Sand Dune Arch Trail page, credited NPS/Kayla Vogt without copyright symbol. Reviewed October 22, 2026 under NPS credited-media policy and ownership disclaimer.",
+      "caption": "Winter scene: snow and ice can make the rock and trail slippery. This photograph does not report current conditions.",
+      "approved": true
+    }
   },
   {
     "slug": "capitol-reef-sunset-point",
@@ -655,7 +667,19 @@
         "kind": "editorial"
       }
     },
-    "photo": null
+    "photo": {
+      "src": "assets/photos/bridal-veil-falls.webp",
+      "alt": "Bridal Veil Falls cascades over a gray rock face in Provo Canyon, with visitors near the lower falls.",
+      "title": "Bridal Vail Falls in Provo Canyon",
+      "photographer": "An Errant Knight",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bridal_Vail_Falls_in_Provo_Canyon.JPG",
+      "license": "CC BY-SA 4.0 — original photograph and this WebP derivative",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modifications": "Converted supplied JPG to WebP and compressed; embedded metadata removed; no additional crop, resize, or color edits. Any derivative contributions are offered under CC BY-SA 4.0.",
+      "rights_evidence": "Owner supplied Hikes2.zip and requested use. Commons file description identifies author An Errant Knight and CC BY-SA 4.0; source and license verified October 22, 2026. Supplied image is a lower-resolution copy of the Commons photograph.",
+      "caption": "Historical photo from 2015; it does not show current construction or access conditions. The visible visitors are not a recommendation to approach or climb the waterfall.",
+      "approved": true
+    }
   },
   {
     "slug": "huber-grove-trail",
