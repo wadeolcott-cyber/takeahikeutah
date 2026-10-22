@@ -99,7 +99,19 @@
     ],
     "verification_notes": "Official route review remains incomplete. No distance, elevation gain, duration, surface, fees, or seasonal recommendation is asserted. Location and selection for First Steps were supplied by the project owner.",
     "field_sources": {},
-    "photo": null
+    "photo": {
+      "src": "assets/photos/silver-lake-loop.webp",
+      "alt": "Silver Lake bordered by green willows and conifers, with forested mountain slopes beyond the water.",
+      "title": "Silver Lake, Big Cottonwood Canyon",
+      "photographer": "Teresa Prendusi / U.S. Forest Service",
+      "source_url": "https://www.fs.usda.gov/wildflowers/regions/intermountain/SilverLake/index.shtml",
+      "license": "Public domain in the United States (U.S. Forest Service work)",
+      "license_url": "https://research.fs.usda.gov/sites/default/files/2023-03/srs_abbreviated_author_guidelines.pdf",
+      "modifications": "Converted supplied JPG to WebP and compressed; embedded metadata removed; no additional crop, resize, or color edits",
+      "rights_evidence": "Owner supplied SilverlakeLoop.jpg in Hikes2.zip and a screenshot matching the exact photo to the Teresa Prendusi caption on the Forest Service educational page. Official Forest Service records identify Prendusi as its Intermountain regional botanist (https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5052645.pdf). Classified as a Forest Service work based on that employee credit and official educational publication; no contrary rights notice appears beside the photo. Forest Service Photograph Guidelines describe public-domain status of federal employees’ official-duty photos. Reviewed October 22, 2026.",
+      "caption": "Silver Lake in Big Cottonwood Canyon. This photograph illustrates the setting; it does not confirm current trail access or conditions.",
+      "approved": true
+    }
   },
   {
     "slug": "bryce-sunset-to-sunrise",
