@@ -1,0 +1,90 @@
+{
+  "stages": [
+    {
+      "id": "first-steps",
+      "title": "First Steps",
+      "summary": "Start with short, approachable outings and learn the essentials.",
+      "advice": "Choose a manageable route, pack the basics, stay with your group, and get comfortable turning back."
+    },
+    {
+      "id": "find-your-stride",
+      "title": "Find Your Stride",
+      "summary": "Build confidence, endurance, and everyday trail skills.",
+      "advice": "Increase one challenge at a time. Practice pacing, offline navigation, weather awareness, and planning your return."
+    },
+    {
+      "id": "reach-new-heights",
+      "title": "Reach New Heights",
+      "summary": "Prepare for longer days, more climbing, and challenging terrain.",
+      "advice": "Assess the full route, elevation, exposure, daylight, and escape options. Build relevant skills before committing; fitness alone is not enough."
+    },
+    {
+      "id": "beyond-the-trail",
+      "title": "Beyond the Trail",
+      "summary": "Explore backpacking, self-reliance, and helping others grow.",
+      "advice": "Learn overnight planning, water treatment, food storage, permits, and emergency decision-making. Seek qualified instruction for specialized terrain. Mentor with patience and respect for others\u2019 limits."
+    }
+  ],
+  "landscapes": [
+    {
+      "id": "foothills",
+      "title": "Foothills"
+    },
+    {
+      "id": "canyons",
+      "title": "Canyons"
+    },
+    {
+      "id": "desert",
+      "title": "Desert & red rock"
+    },
+    {
+      "id": "mountains",
+      "title": "Mountains & forests"
+    },
+    {
+      "id": "water",
+      "title": "Lakes & waterways"
+    }
+  ],
+  "seasons": [
+    {
+      "id": "spring",
+      "title": "Spring"
+    },
+    {
+      "id": "summer",
+      "title": "Summer"
+    },
+    {
+      "id": "fall",
+      "title": "Fall"
+    },
+    {
+      "id": "winter",
+      "title": "Winter"
+    }
+  ],
+  "terrain": [
+    {
+      "id": "maintained-path",
+      "title": "Maintained path"
+    },
+    {
+      "id": "rocky",
+      "title": "Rocky ground"
+    },
+    {
+      "id": "sand",
+      "title": "Sand"
+    },
+    {
+      "id": "steep",
+      "title": "Steep terrain"
+    },
+    {
+      "id": "exposed",
+      "title": "Exposed terrain"
+    }
+  ]
+}
