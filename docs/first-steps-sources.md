@@ -4,7 +4,7 @@ Reviewed October 21, 2026 (America/Denver). Source review records available rout
 
 ## Verification scope
 
-- Silver Lake Loop: Forest Service requests reached the host but returned an upstream HTTP 403 access-denied response. Route statistics, surface, duration, seasons, fees, and trailhead details remain unverified. This record is pending; its supplied location is not represented as independently reviewed.
+- Silver Lake Loop (reviewed October 22, 2026): the Forest Service source is now accessible. It supports an approximately one-mile loop, mostly boardwalk, and July–August wildflower planning. Gain and walking time remain unknown. Partial boardwalk accessibility is not a whole-loop guarantee. Current access, fees, and pet/watershed restrictions require confirmation.
 - Bridal Veil Falls: county and state park pages are now accessible and reviewed. They confirm paved riverside trails, listed facilities, leash requirement, county management, and a main-parking-area approach with possible winter snow limitations. Exact distance, cumulative gain, walking time, and difficulty are not published in these reviewed pages. No beginner season tags are assigned. Construction, currently open parking, authorized pedestrian access, fees, and accessibility remain unconfirmed; retain the manual-access warning. Absence of a closure notice does not establish access. River/footing precautions are conservative editorial guidance. Contact Utah County Public Works at 801-851-8600 before visiting.
 - Bryce Sunset–Sunrise: NPS publishes 1.0 mile round trip, 40 ft gain, paved concrete, and approximately one hour (the activity metadata says 20–60 minutes). The accessibility paragraph has an inconsistent metric conversion; use the main route description. This is only the paved segment, not the entire Rim Trail. Winter preparation differs.
 - Jenny’s Canyon: Utah State Parks publishes 0.5 mile round trip, 20 minutes, and easy rating. Sand/uneven rock are described on the hiking page; slopes and steps on the official brochure. Numeric cumulative elevation gain is not published in the reviewed sources. Do not transfer Johnson Canyon’s separate seasonal closure to Jenny’s.
@@ -17,7 +17,7 @@ Reviewed October 21, 2026 (America/Denver). Source review records available rout
 
 ### Silver Lake Loop — Brighton, Big Cottonwood Canyon
 
-- [Official land-manager website (route research pending)](https://www.fs.usda.gov/r04/uwcnf)
+- [Forest Service: Silver Lake Loop route information](https://www.fs.usda.gov/wildflowers/regions/intermountain/SilverLake/index.shtml)
 
 ### Sunset Point to Sunrise Point — Bryce Canyon National Park
 

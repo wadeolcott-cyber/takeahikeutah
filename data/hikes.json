@@ -66,39 +66,72 @@
     "slug": "silver-lake-loop",
     "title": "Silver Lake Loop",
     "subtitle": "Brighton, Big Cottonwood Canyon",
-    "description": "Your hiking journey can begin with curiosity about Brighton’s mountain setting. Silver Lake Loop is a requested First Steps outing in Big Cottonwood Canyon; a route-specific guide is being prepared once official information can be reviewed.",
+    "description": "Explore a mountain lake and its wetlands on an approximately one-mile loop at Brighton. Boardwalk, forest, and wildflowers offer plenty to notice at a relaxed pace. This guide covers the lake loop only, excluding connecting trails to other lakes.",
     "art": "lake",
-    "status": "pending",
+    "status": "reviewed",
     "experience": "first-steps",
-    "landscapes": [],
-    "seasons": [],
-    "distance_miles": null,
+    "landscapes": [
+      "mountains",
+      "water"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "distance_miles": 1.0,
     "elevation_gain_feet": null,
-    "terrain": [],
-    "difficulty": null,
-    "trailhead": null,
-    "preparation": "Before choosing this route, confirm its demands and current access with the official land manager. Check weather and closures, bring water and layers, and share your plan.",
-    "hazards": null,
-    "sources": [],
-    "verified_on": null,
-    "location": "Brighton, Big Cottonwood Canyon",
-    "duration": null,
-    "route_type": null,
-    "surface": null,
-    "fees": null,
-    "access_restrictions": null,
-    "season_notes": null,
-    "weather_notes": null,
-    "access_status": "not-checked",
-    "access_note": "Current access has not been checked. Consult the official land manager before planning a visit.",
-    "official_links": [
+    "terrain": [
+      "maintained-path"
+    ],
+    "difficulty": "First Steps editorial selection; Forest Service describes a family-friendly outing without a formal difficulty rating",
+    "trailhead": "Silver Lake Visitor’s Center, Brighton, at the head of Big Cottonwood Canyon",
+    "preparation": "Bring water, layers, sun protection, and insect repellent. Stay on the designated loop and leave wildflowers for others to enjoy.",
+    "hazards": "Moose are wild and unpredictable: do not approach them. Mosquitoes can be troublesome. Check weather, snow, ice, and footing before choosing the outing.",
+    "sources": [
       {
-        "title": "Official land-manager website (route research pending)",
-        "url": "https://www.fs.usda.gov/r04/uwcnf"
+        "title": "U.S. Forest Service: Silver Lake Loop route, boardwalk, wildflowers, directions, and wildlife precautions",
+        "url": "https://www.fs.usda.gov/wildflowers/regions/intermountain/SilverLake/index.shtml"
       }
     ],
-    "verification_notes": "Official route review remains incomplete. No distance, elevation gain, duration, surface, fees, or seasonal recommendation is asserted. Location and selection for First Steps were supplied by the project owner.",
-    "field_sources": {},
+    "verified_on": "2026-10-22",
+    "location": "Brighton, Big Cottonwood Canyon",
+    "duration": null,
+    "route_type": "Loop around Silver Lake and its wetlands; about one mile total",
+    "surface": "Mostly boardwalk; other sections and current accessibility details are not specified in the reviewed page",
+    "fees": "Fees and parking/pass requirements are not stated in this source. Confirm with the Forest Service before visiting.",
+    "access_restrictions": "Confirm current closures, parking, pet/watershed restrictions, and accessibility with the land manager. This source is not a current access report.",
+    "season_notes": "Summer is the planning filter supported by the source’s July–August wildflower guidance. This does not establish suitable conditions on any date or exclude other seasons.",
+    "weather_notes": "At roughly 8,760 feet, plan conservatively for mountain weather. Check the forecast and current snow/ice conditions; bring layers and turn back when conditions exceed your group’s abilities.",
+    "access_status": "not-checked",
+    "access_note": "Source review completed; current access has not been checked. Consult the Forest Service for closures and conditions before visiting.",
+    "official_links": [],
+    "verification_notes": "The Forest Service describes an approximate one-mile lake loop, mostly boardwalk. Distance is approximate, not a surveyed measurement. Numeric cumulative elevation gain and walking time are not published and remain unknown. The source describes much of the boardwalk as wheelchair accessible, but does not establish accessibility of the entire loop or its current condition. Landscape, terrain, summer planning, and First Steps selection are editorial categories based on the source, not live access or safety ratings. Fees and pet/watershed restrictions remain unconfirmed.",
+    "field_sources": {
+      "distance_miles": {
+        "url": "https://www.fs.usda.gov/wildflowers/regions/intermountain/SilverLake/index.shtml",
+        "note": "Approximately one mile for the complete loop, as described by the Forest Service.",
+        "kind": "official"
+      },
+      "surface": {
+        "url": "https://www.fs.usda.gov/wildflowers/regions/intermountain/SilverLake/index.shtml",
+        "note": "Mostly boardwalk; do not infer accessibility of the entire loop.",
+        "kind": "official"
+      },
+      "landscapes": {
+        "url": "https://www.fs.usda.gov/wildflowers/regions/intermountain/SilverLake/index.shtml",
+        "note": "Editorial mountain and water categories based on the described setting.",
+        "kind": "editorial"
+      },
+      "terrain": {
+        "url": "https://www.fs.usda.gov/wildflowers/regions/intermountain/SilverLake/index.shtml",
+        "note": "Editorial maintained-path category for the described loop.",
+        "kind": "editorial"
+      },
+      "seasons": {
+        "url": "https://www.fs.usda.gov/wildflowers/regions/intermountain/SilverLake/index.shtml",
+        "note": "Summer planning category based on July–August wildflower guidance, not current conditions.",
+        "kind": "editorial"
+      }
+    },
     "photo": {
       "src": "assets/photos/silver-lake-loop.webp",
       "alt": "Silver Lake bordered by green willows and conifers, with forested mountain slopes beyond the water.",
