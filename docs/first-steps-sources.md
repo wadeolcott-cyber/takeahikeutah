@@ -5,7 +5,7 @@ Reviewed October 21, 2026 (America/Denver). Source review records available rout
 ## Verification scope
 
 - Silver Lake Loop: Forest Service requests reached the host but returned an upstream HTTP 403 access-denied response. Route statistics, surface, duration, seasons, fees, and trailhead details remain unverified. This record is pending; its supplied location is not represented as independently reviewed.
-- Bridal Veil Falls: Utah County legacy park links redirect to `https://publicworks.utahcounty.gov`; the running proxy still denied that destination after the reported settings save at the time of this review. Construction was flagged by the project owner, not independently verified. Keep the manual-access warning. Do not infer a usable approach or free parking.
+- Bridal Veil Falls: county and state park pages are now accessible and reviewed. They confirm paved riverside trails, listed facilities, leash requirement, county management, and a main-parking-area approach with possible winter snow limitations. Exact distance, cumulative gain, walking time, and difficulty are not published in these reviewed pages. No beginner season tags are assigned. Construction, currently open parking, authorized pedestrian access, fees, and accessibility remain unconfirmed; retain the manual-access warning. Absence of a closure notice does not establish access. River/footing precautions are conservative editorial guidance. Contact Utah County Public Works at 801-851-8600 before visiting.
 - Bryce Sunset–Sunrise: NPS publishes 1.0 mile round trip, 40 ft gain, paved concrete, and approximately one hour (the activity metadata says 20–60 minutes). The accessibility paragraph has an inconsistent metric conversion; use the main route description. This is only the paved segment, not the entire Rim Trail. Winter preparation differs.
 - Jenny’s Canyon: Utah State Parks publishes 0.5 mile round trip, 20 minutes, and easy rating. Sand/uneven rock are described on the hiking page; slopes and steps on the official brochure. Numeric cumulative elevation gain is not published in the reviewed sources. Do not transfer Johnson Canyon’s separate seasonal closure to Jenny’s.
 - Ladyfinger Point: official map labels 0.25 mile one-way, doubled here for a 0.5-mile return outing. Official sources reviewed do not specify this route’s gain, surface, or walking time. The displayed 20–40 minute estimate is editorial. General island wildlife, insect, and access rules are source-backed.
@@ -60,7 +60,8 @@ Reviewed October 21, 2026 (America/Denver). Source review records available rout
 
 ### Bridal Veil Falls — Provo Canyon
 
-- [Utah County Public Works (official park information; access review required)](https://publicworks.utahcounty.gov)
+- [Utah County: Bridal Veil Falls park information](https://publicworks.utahcounty.gov/parks)
+- [Utah State Parks: Bridal Veil Falls State Monument](https://stateparks.utah.gov/parks/bridal-veil-falls/)
 
 ### Huber Grove Trail — Wasatch Mountain State Park
 
