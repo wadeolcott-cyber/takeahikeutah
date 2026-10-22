@@ -115,9 +115,10 @@ def credit_id(photo):
 def compact_photo_credit(photo):
     target = 'photo-credits.html#' + credit_id(photo)
     credit = f'Photo: {e(photo["photographer"])}'
-    if photo['license'].startswith('CC BY-SA 4.0'):
-        credit = (f'Photo: <a href="{e(photo["source_url"])}">{e(photo["photographer"])}</a>'
-                  f' · <a href="{e(photo["license_url"])}">CC BY-SA 4.0</a> · WebP conversion')
+    if photo['license'].startswith('CC BY-SA '):
+        license_label = photo['license'].split(' —')[0]
+        credit = (f'“{e(photo["title"])}” · Photo: <a href="{e(photo["source_url"])}">{e(photo["photographer"])}</a>'
+                  f' · <a href="{e(photo["license_url"])}">{e(license_label)}</a> · WebP conversion')
     return f'<span>{credit} · <a href="{e(target)}">Photo credits</a></span>'
 
 
@@ -182,7 +183,7 @@ def card(hike, index):
         width, height = validate_photo(photo)
         thumbnail = f'<img class="card-photo" src="{e(photo["src"])}" alt="" width="{width}" height="{height}" loading="lazy" decoding="async">'
     art_class = 'has-photo' if photo else e(hike['art'])
-    image_note = 'Photo · credits in guide' if photo else 'Illustration · photo placeholder'
+    image_note = e(photo.get('card_note', 'Photo · credits in guide')) if photo else 'Illustration · photo placeholder'
     return f'''<article class="card hike-card" {data}>
 <a class="card-art {art_class}" href="{e(hike['slug'])}.html" aria-label="Explore {e(hike['title'])}">{thumbnail}<span class="pill">{badge}</span><span class="art-number">{index:02}</span><span class="card-image-note">{image_note}</span></a>
 <div class="card-body"><p class="eyebrow">{e(hike['subtitle'])}</p><h3><a href="{e(hike['slug'])}.html">{e(hike['title'])}</a></h3><p>{e(hike['description'])}</p>{access_warning(hike)}<p class="card-meta">{e(stage)}{' · concept only' if hike['status'] == 'concept' else ''}</p><div class="card-bottom"><span>{'View route details' if hike['status'] in {'reviewed', 'verified'} else 'Trail details unverified'}</span><a href="{e(hike['slug'])}.html" aria-label="View {e(hike['title'])}">↗</a></div></div></article>'''

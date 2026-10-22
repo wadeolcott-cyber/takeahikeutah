@@ -50,3 +50,7 @@ The owner supplied JennysCanyon.jpg, SunsetPoint_Bryce.jpg, and SunrisePoint_Bry
 ## Compact hike-page credits
 
 Hike photos show a short photographer credit and a direct link to their detailed entry on Photo Credits. Complete image titles, sources, license/permission text, and editing histories remain on that page. CC BY-SA 4.0 photos also keep the linked source/author, license link, and a brief WebP change notice beside the image. When adding photos under other licenses, review whether their terms require further nearby notices before publication.
+
+## Antelope Island park view — October 22, 2026
+
+Owner supplied the lower-resolution Commons photo Antelope Island State Park, Utah26.jpg by dconvertini. Commons lists its Flickr original (photo 40902346522) and CC BY-SA 2.0, confirmed in its Flickr license review. The local WebP and any derivative contributions retain CC BY-SA 2.0. Source, title, author, license, and conversion are credited; no added reuse restrictions apply. The guide caption and card label explicitly identify it as park scenery, not a confirmed photograph of Ladyfinger Point or its trail. The 2017 image does not establish present water levels or shoreline conditions.

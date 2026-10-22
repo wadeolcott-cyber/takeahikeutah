@@ -65,6 +65,14 @@ class Photos(unittest.TestCase):
         self.assertIn('WebP conversion', html)
         self.assertIn('photo-credits.html#photo-test', html)
 
+    def test_sharealike_2_and_regional_card_label(self):
+        self.photo.update(license='CC BY-SA 2.0 — original and derivative', license_url='https://creativecommons.org/licenses/by-sa/2.0/', card_note='Park view · not trail-specific')
+        html = build.compact_photo_credit(self.photo)
+        self.assertIn('CC BY-SA 2.0</a>', html)
+        self.assertIn('A &amp; B', html)
+        h = dict(slug='park', title='Park', photo=self.photo, experience='first-steps', landscapes=[], seasons=[], terrain=[], distance_miles=None, elevation_gain_feet=None, status='reviewed', subtitle='Location', description='Guide', art='lake')
+        self.assertIn('Park view · not trail-specific', build.card(h, 1))
+
     def test_placeholder_and_empty_credits(self):
         build.HIKES = []
         self.assertIn('No trail photographs', build.photo_credits())

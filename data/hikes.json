@@ -411,7 +411,20 @@
         "kind": "editorial"
       }
     },
-    "photo": null
+    "photo": {
+      "src": "assets/photos/antelope-island-park.webp",
+      "alt": "A view within Antelope Island State Park showing a rocky shore, exposed lakebed, and blue Great Salt Lake water; not confirmed as Ladyfinger Point.",
+      "title": "Antelope Island State Park, Utah26",
+      "photographer": "dconvertini",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Antelope_Island_State_Park,_Utah26.jpg",
+      "license": "CC BY-SA 2.0 — original photograph and this WebP derivative",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "modifications": "Converted supplied lower-resolution JPG to WebP and compressed; embedded metadata removed; no additional crop, resize, or color edits. Any derivative contributions are offered under CC BY-SA 2.0.",
+      "rights_evidence": "Owner supplied photo ZIP and approved site use. Exact Commons file record credits dconvertini, identifies original Flickr source https://www.flickr.com/photos/42477684@N08/40902346522/ and CC BY-SA 2.0; Flickr license review confirmed by Commons on August 11, 2024. Reviewed October 22, 2026. Location is only confirmed as Antelope Island State Park, not the Ladyfinger Point route.",
+      "caption": "Antelope Island State Park — not confirmed as a view of Ladyfinger Point or its trail. Historical photo from 2017; water levels and shoreline conditions change.",
+      "card_note": "Park view · not trail-specific",
+      "approved": true
+    }
   },
   {
     "slug": "sand-dune-arch",
