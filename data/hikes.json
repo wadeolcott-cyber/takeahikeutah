@@ -539,39 +539,64 @@
     "slug": "bridal-veil-falls",
     "title": "Bridal Veil Falls",
     "subtitle": "Provo Canyon",
-    "description": "A waterfall can be a wonderful reason to take a first walk outdoors. Bridal Veil Falls in Provo Canyon is a requested First Steps outing, but construction makes confirming the available route and parking especially important. This draft is not a recommendation to visit before access is checked.",
+    "description": "Make a waterfall the reason for a first walk outdoors. Bridal Veil Falls pairs Provo Canyon scenery with paved riverside trails and nearby picnic areas. This guide covers the paved viewing approach only, not a climb beside or above the falls. Confirm the available pedestrian route and parking with Utah County before choosing this outing; construction access remains unverified.",
     "art": "lake",
-    "status": "pending",
+    "status": "reviewed",
     "experience": "first-steps",
-    "landscapes": [],
+    "landscapes": [
+      "canyons",
+      "water"
+    ],
     "seasons": [],
     "distance_miles": null,
     "elevation_gain_feet": null,
-    "terrain": [],
-    "difficulty": null,
-    "trailhead": null,
-    "preparation": "Before choosing this route, confirm its demands and current access with the official land manager. Check weather and closures, bring water and layers, and share your plan.",
-    "hazards": null,
-    "sources": [],
-    "verified_on": null,
-    "location": "Provo Canyon",
-    "duration": null,
-    "route_type": null,
-    "surface": null,
-    "fees": null,
-    "access_restrictions": null,
-    "season_notes": null,
-    "weather_notes": null,
-    "access_status": "manual-check",
-    "access_note": "Manual access verification required: construction may affect trail and parking access. The project owner flagged ongoing construction; the current extent, dates, and available route have not been independently verified. Confirm directly with the land manager before visiting.",
-    "official_links": [
+    "terrain": [
+      "maintained-path"
+    ],
+    "difficulty": "First Steps editorial selection for the paved viewing approach; official route-specific difficulty not published in reviewed sources",
+    "trailhead": "Bridal Veil Falls main parking area, Provo Canyon off US Highway 189; confirm the currently authorized parking and pedestrian approach with Utah County.",
+    "preparation": "Confirm parking, construction restrictions, and the available paved route with Utah County before leaving. Bring water, shoes with grip, and layers. Stay on the authorized viewing approach and respect barriers; this guide excludes climbing beside or above the waterfall.",
+    "hazards": "Utah State Parks warns that snow can limit winter access. As conservative planning precautions, watch for wet or icy footing, keep children close beside the river, and avoid climbing wet rocks. Respect construction barriers and turn back if the authorized route is unclear.",
+    "sources": [
       {
-        "title": "Utah County Public Works (official park information; access review required)",
-        "url": "https://publicworks.utahcounty.gov"
+        "title": "Utah County: Bridal Veil Falls paved riverside trails, amenities, leash rule, and reservations",
+        "url": "https://publicworks.utahcounty.gov/parks"
+      },
+      {
+        "title": "Utah State Parks: Bridal Veil Falls management, parking-area approach, and winter limitations",
+        "url": "https://stateparks.utah.gov/parks/bridal-veil-falls/"
       }
     ],
-    "verification_notes": "Official route review remains incomplete. No distance, elevation gain, duration, surface, fees, or seasonal recommendation is asserted. Location and selection for First Steps were supplied by the project owner.",
-    "field_sources": {}
+    "verified_on": "2026-10-21",
+    "location": "Provo Canyon",
+    "duration": null,
+    "route_type": "Return along the confirmed paved approach; exact route variant depends on authorized access.",
+    "surface": "Paved riverside trails (Utah County); current usable approach, grades, and accessibility require confirmation.",
+    "fees": "The county says no reservation is needed to enjoy the falls. The reviewed pages do not establish parking or admission fees; confirm any current charges with Utah County. No reservation requirement does not mean free parking.",
+    "access_restrictions": "Utah County manages day-to-day operations. Its park listing includes restrooms, picnic areas, and pets on leash, but does not confirm their current availability. Ask Utah County Public Works at 801-851-8600 about construction, open parking, authorized pedestrian access, and facilities before visiting.",
+    "season_notes": "Utah State Parks describes year-round trail access with possible winter limitations from snow. No beginner planning-season filters are assigned until the available route and seasonal demands are confirmed; year-round information is not a current opening report.",
+    "weather_notes": "Check the canyon forecast before leaving. Snow, ice, cold, and wet pavement can change a short walk substantially. Choose conditions that suit the whole group and turn back when footing is unsuitable.",
+    "access_status": "manual-check",
+    "access_note": "Construction and access still require direct confirmation with Utah County Public Works (801-851-8600). Official park pages were reviewed, but they do not resolve the construction concern previously reported by the project owner or identify currently open parking and an authorized pedestrian route. Do not infer that access is open from this source review.",
+    "official_links": [],
+    "verification_notes": "Official county and state pages are now accessible and have been reviewed. They support the paved riverside setting, listed park amenities, leash requirement, county management, main-parking-area approach, and possible winter snow limitations. They do not publish an exact distance, cumulative elevation gain, walking time, or route-specific difficulty for this outing; those statistics remain unknown. Construction status, currently open parking, authorized pedestrian access, fees, and accessibility remain unconfirmed. Landscape and terrain tags describe the intended paved approach, not current access. Hazards beyond the published winter warning are conservative editorial planning guidance.",
+    "field_sources": {
+      "surface": {
+        "url": "https://publicworks.utahcounty.gov/parks",
+        "note": "County describes paved riverside trails; no grade or accessibility guarantee is inferred.",
+        "kind": "official"
+      },
+      "landscapes": {
+        "url": "https://publicworks.utahcounty.gov/parks",
+        "note": "Editorial canyon and water categories based on the official park setting.",
+        "kind": "editorial"
+      },
+      "terrain": {
+        "url": "https://publicworks.utahcounty.gov/parks",
+        "note": "Editorial maintained-path category for the intended paved viewing approach only.",
+        "kind": "editorial"
+      }
+    }
   },
   {
     "slug": "huber-grove-trail",
