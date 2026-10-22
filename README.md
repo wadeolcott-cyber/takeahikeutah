@@ -67,3 +67,7 @@ Real-route records support `location`, `duration` (include whether sourced or ed
 The shared detail layout is `templates/hike.html`. The First Steps section in `journey.html` links all eight named routes. The homepage features the first three source-reviewed routes rather than expanding into an eleven-card catalog. The original concept URLs remain functional and labeled as concepts.
 
 A source’s **elevation change** is not silently converted to **cumulative elevation gain**. For Sand Dune Arch and Capitol Reef Sunset Point, the official wording is shown in `elevation_display` while numeric gain stays unknown and does not match gain filters. Missing published numbers are not zeros. All seasonal labels are planning aids; editorial selections are identified in each route’s season notes. No page asserts that a trail is currently open.
+
+## Photos and copyright
+
+See [the photo workflow](docs/photos.md) for local WebP preparation, owner approval, license records, attribution, and image-size limits. Each hike has an optional `photo` record; `null` keeps its existing illustration. The build generates `photo-credits.html` and links it from every footer. Run `python3 scripts/test_photos.py` when changing photo handling. Pillow is optional editing tooling only; production and the site generator remain dependency-free.

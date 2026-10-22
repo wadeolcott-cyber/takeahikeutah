@@ -6,3 +6,5 @@
 .image-placeholder-label{position:absolute;bottom:16px;left:16px;right:16px;width:fit-content;background:#faf8f2;color:#243e34;padding:6px 12px;border-radius:3px;font-size:12px}.card .access-warning{min-height:0!important;color:#804c22!important;font-size:12px!important;font-weight:700}.stage-hike-links{padding-left:22px}.stage-hike-links li{margin-bottom:12px;font-size:14px}.stage-hike-links a{text-decoration:underline;text-underline-offset:3px}.access-notice{border-left-width:5px}
 
 .card-image-note{position:absolute;left:16px;bottom:12px;background:#faf8f2;color:#243e34;padding:3px 7px;border-radius:3px;font-size:9px;letter-spacing:.3px}.result-group{margin-block:35px 50px}.result-group>h2{font-size:30px}.stats dd{overflow-wrap:anywhere}
+
+.hike-photo{margin:0 0 28px}.hike-photo img{display:block;width:100%;height:auto;max-height:600px;object-fit:contain;border-radius:5px;background:#eeeee5}.hike-photo figcaption{font-size:12px;color:var(--muted);margin-top:10px}.hike-photo figcaption a,.reading article a{text-decoration:underline;text-underline-offset:3px}

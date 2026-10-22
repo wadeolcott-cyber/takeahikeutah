@@ -3,6 +3,8 @@
 import json
 import math
 import re
+import struct
+from urllib.parse import urlsplit
 from datetime import date
 from html import escape
 from pathlib import Path
@@ -19,10 +21,12 @@ def e(value):
 def validate():
     slugs = set()
     for hike in HIKES:
+        if hike.get('photo') is not None:
+            validate_photo(hike['photo'])
         slug = hike['slug']
         assert re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug), 'Invalid slug'
         assert slug not in slugs, 'Duplicate slug'
-        assert slug not in {'index', 'hikes', 'journey', 'about', 'contact', 'getting-started'}, 'Reserved slug'
+        assert slug not in {'index', 'hikes', 'journey', 'about', 'contact', 'getting-started', 'photo-credits'}, 'Reserved slug'
         slugs.add(slug)
         assert hike['status'] in {'concept', 'pending', 'reviewed', 'verified'}
         assert hike['experience'] is None or hike['experience'] in LABELS['stages']
@@ -53,6 +57,74 @@ def validate():
             assert hike['sources'] and hike['verified_on'], 'Verified routes need sources and a review date'
             assert all(hike[x] is not None for x in ['experience', 'distance_miles', 'elevation_gain_feet', 'difficulty', 'trailhead', 'hazards'])
             assert all(hike[x] for x in ['landscapes', 'seasons', 'terrain'])
+
+
+def webp_size(path):
+    raw = path.read_bytes()
+    assert raw[:4] == b'RIFF' and raw[8:12] == b'WEBP', 'Expected a WebP file'
+    offset = 12
+    while offset + 8 <= len(raw):
+        kind = raw[offset:offset + 4]
+        size = int.from_bytes(raw[offset + 4:offset + 8], 'little')
+        body = raw[offset + 8:offset + 8 + size]
+        if kind == b'VP8X':
+            assert not body[0] & 2, 'Animated photos are not supported'
+            return 1 + int.from_bytes(body[4:7], 'little'), 1 + int.from_bytes(body[7:10], 'little')
+        if kind == b'VP8 ':
+            assert body[3:6] == b'\x9d\x01\x2a', 'Invalid WebP frame'
+            return struct.unpack('<H', body[6:8])[0] & 16383, struct.unpack('<H', body[8:10])[0] & 16383
+        if kind == b'VP8L':
+            assert body[0] == 47, 'Invalid lossless WebP'
+            bits = int.from_bytes(body[1:5], 'little')
+            return (bits & 16383) + 1, ((bits >> 14) & 16383) + 1
+        offset += 8 + size + size % 2
+    raise AssertionError('WebP dimensions missing')
+
+
+def validate_photo(photo):
+    for field in ('src', 'alt', 'title', 'photographer', 'source_url', 'license', 'license_url', 'modifications', 'rights_evidence'):
+        assert isinstance(photo.get(field), str) and photo[field].strip(), f'Photo needs {field}'
+    assert photo.get('approved') is True, 'Photo needs explicit owner approval after rights review'
+    for field in ('source_url', 'license_url'):
+        url = urlsplit(photo[field])
+        assert url.scheme == 'https' and url.netloc, f'Photo needs HTTPS {field}'
+    path = Path(photo['src'])
+    assert not path.is_absolute() and '..' not in path.parts and path.suffix == '.webp', 'Photo must be local WebP'
+    assert path.parts[:2] == ('assets', 'photos'), 'Store hike photos in assets/photos/'
+    full = (ROOT / path).resolve()
+    assert full.is_relative_to((ROOT / 'assets/photos').resolve()) and full.is_file(), 'Missing local photo'
+    width, height = webp_size(full)
+    assert 0 < width <= 1600 and 0 < height <= 1600, 'Photo dimensions must be at most 1600px'
+    assert full.stat().st_size <= 400_000, 'Photo must be at most 400KB; optimize it first'
+    return width, height
+
+
+def photo_credit(photo):
+    return (f'<span>“{e(photo["title"])}” — Photo by {e(photo["photographer"])}. '
+            f'<a href="{e(photo["source_url"])}">Source</a> · '
+            f'<a href="{e(photo["license_url"])}">{e(photo["license"])}</a>. '
+            f'Modifications: {e(photo["modifications"])}.</span>')
+
+
+def hike_photo(hike):
+    photo = hike.get('photo')
+    if not photo:
+        return f'<div class="detail-art {e(hike["art"])}" role="img" aria-label="Image placeholder: illustration, not a photograph of this trail"><span class="image-placeholder-label">Illustration · trail photograph coming later</span></div>'
+    width, height = validate_photo(photo)
+    return (f'<figure class="hike-photo"><img src="{e(photo["src"])}" alt="{e(photo["alt"])}" '
+            f'width="{width}" height="{height}" loading="lazy" decoding="async">'
+            f'<figcaption>{photo_credit(photo)}</figcaption></figure>')
+
+
+def photo_credits():
+    entries = ''.join(f'<article><h2><a href="{e(h["slug"])}.html">{e(h["title"])}</a></h2><p>{photo_credit(h["photo"])}</p></article>' for h in HIKES if h.get('photo'))
+    return ('<section class="wrap section"><h1 class="page-title">Photo Credits</h1>'
+            '<p class="lede">Thank you to the photographers whose work helps us explore Utah.</p>'
+            '<div class="reading"><h2>Homepage: Bryce Canyon</h2>'
+            '<p>Photo by the Take a Hike Utah site owner, who confirmed personally taking this photograph and authorized its use on this website. Copyright remains with the photographer; no public reuse license is granted. Source: owner-supplied WebP. Display modifications: responsive sizing and cropping for the homepage layout. Earlier editing history has not been recorded. Contact the site owner for reuse permission.</p>'
+            '<h2>Trail photographs</h2>' + (entries or '<p>No trail photographs have been added yet. Hike pages currently use illustrations, clearly labeled as placeholders.</p>') +
+            '<h2>Illustrations</h2><p>The landscape illustration and site icon were created for this website. They are not photographs of individual trails. No public reuse license is granted here.</p>'
+            '<p>A credit is not permission to reuse an image. Consult the linked license and original source, and obtain any additional permissions required for your use.</p></div></section>')
 
 
 def labels(hike, key):
@@ -114,9 +186,12 @@ def options(key):
 
 def build():
     validate()
+    hero = ROOT / "assets/BryceCanyon.webp"
+    assert max(webp_size(hero)) <= 2048 and hero.stat().st_size <= 600_000, "Optimize homepage WebP"
     shell = Template((ROOT / 'templates/page.html').read_text())
     def page(filename, title, body):
         (ROOT / filename).write_text(shell.substitute(title=e(title), body=body) + '\n')
+    page('photo-credits.html', 'Photo Credits', photo_credits())
     cards = '<div class="cards">' + ''.join(card(h, i) for i, h in enumerate([h for h in HIKES if h['status'] in {'reviewed', 'verified'}][:3], 1)) + '</div>'
     journey_home = '<section class="wrap section"><p class="eyebrow">GROW AT YOUR OWN PACE</p><h2>Your Hiking Journey</h2><p class="section-intro">From a first walk to thoughtful, self-reliant adventures. Pick the stage that fits today. There’s no race, and harder isn’t always better.</p>' + journey_cards() + '</section>'
     explore_home = '<section class="explore-band"><div class="wrap"><p class="eyebrow">MANY LANDSCAPES. EVERY SEASON.</p><h2>Discover more of Utah.</h2><p>Explore foothills, canyons, desert, mountain forests, and waterways. Learn how the seasons change your planning.</p><div class="explore-links">' + ''.join(f'<a href="journey.html#landscape-{x["id"]}">{e(x["title"])} ↗</a>' for x in TAX['landscapes']) + '</div><a class="underlined" href="journey.html#seasons">Explore seasonal planning →</a></div></section>'
@@ -160,6 +235,7 @@ def build():
         if hike.get('access_note'):
             access_notice = '<aside class="notice access-notice"><strong>' + ('Manual access verification required' if hike.get('access_status') == 'manual-check' else 'Access not verified') + '</strong>' + e(hike['access_note']) + '</aside>'
         body = detail_template.substitute(
+            photo=hike_photo(hike),
             badge={'concept': 'SAMPLE ROUTE CONCEPT', 'pending': 'RESEARCH PENDING', 'reviewed': 'SOURCE-REVIEWED', 'verified': 'TRAIL GUIDE'}[hike['status']],
             title=e(hike['title']), subtitle=e(hike['subtitle']), description=e(hike['description']), art=e(hike['art']),
             notice=notice, access_notice=access_notice, stats=stats(hike), about_heading='The kind of outing we have in mind' if concept else 'Why this hike is worthwhile',
@@ -170,7 +246,7 @@ def build():
             access_restrictions=e(hike.get('access_restrictions') or 'Confirm trail and parking access, closures, permits, pet rules, operating hours, and any construction restrictions with the land manager.'),
             source_section=source_section)
         page(hike['slug'] + '.html', hike['title'], body)
-    print(f'Generated {6 + len(HIKES)} static pages from {len(HIKES)} hike records.')
+    print(f'Generated {7 + len(HIKES)} static pages from {len(HIKES)} hike records.')
 
 
 if __name__ == '__main__':
