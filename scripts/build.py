@@ -9,6 +9,7 @@ from datetime import date
 from html import escape
 from pathlib import Path
 from string import Template
+from sitemap import generate as generate_sitemap
 
 ROOT = Path(__file__).resolve().parents[1]
 TAX = json.loads((ROOT / 'data/taxonomy.json').read_text())
@@ -222,7 +223,12 @@ def build():
     assert max(webp_size(hero)) <= 2048 and hero.stat().st_size <= 600_000, "Optimize homepage WebP"
     shell = Template((ROOT / 'templates/page.html').read_text())
     def page(filename, title, body):
-        (ROOT / filename).write_text(shell.substitute(title=e(title), body=body) + '\n')
+        excluded = filename == 'contact.html' or any(
+            filename == h['slug'] + '.html' and h['status'] in {'concept', 'pending'} for h in HIKES)
+        html = shell.substitute(title=e(title), body=body)
+        if excluded:
+            html = html.replace('</head>', '<meta name="robots" content="noindex, follow"></head>')
+        (ROOT / filename).write_text(html + '\n')
     page('photo-credits.html', 'Photo Credits', photo_credits())
     cards = '<div class="cards">' + ''.join(card(h, i) for i, h in enumerate([h for h in HIKES if h['status'] in {'reviewed', 'verified'}][:3], 1)) + '</div>'
     journey_home = '<section class="wrap section"><p class="eyebrow">GROW AT YOUR OWN PACE</p><h2>Your Hiking Journey</h2><p class="section-intro">From a first walk to thoughtful, self-reliant adventures. Pick the stage that fits today. There’s no race, and harder isn’t always better.</p>' + journey_cards() + '</section>'
@@ -272,6 +278,7 @@ def build():
             access_restrictions=e(hike.get('access_restrictions') or 'Confirm trail and parking access, closures, permits, pet rules, operating hours, and any construction restrictions with the land manager.'),
             source_section=source_section)
         page(hike['slug'] + '.html', hike['title'], body)
+    generate_sitemap()
     print(f'Generated {7 + len(HIKES)} static pages from {len(HIKES)} hike records.')
 
 
