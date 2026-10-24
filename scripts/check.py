@@ -24,9 +24,13 @@ class Page(HTMLParser):
             if name in attrs:
                 self.links.append(attrs[name])
 
-before = {p: p.read_bytes() for p in ROOT.glob('*.html')}
+def outputs():
+    return {p: p.read_bytes() for p in list(ROOT.glob('*.html')) + [ROOT / 'sitemap.xml', ROOT / 'robots.txt']}
+
+before = outputs()
 subprocess.run([sys.executable, str(ROOT / 'scripts/build.py')], check=True)
-assert before == {p: p.read_bytes() for p in ROOT.glob('*.html')}, 'Generated HTML is stale; regenerate and review it'
+assert before == outputs(), 'Generated files are stale; regenerate and review them'
+subprocess.run([sys.executable, str(ROOT / 'scripts/test_sitemap.py')], check=True)
 pages = {p: Page(p.read_text()) for p in ROOT.glob('*.html')}
 for path, page in pages.items():
     assert page.headings == 1, f'{path.name}: expected one main heading'

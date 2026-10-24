@@ -42,11 +42,11 @@ Filter selections are stored in URL query parameters (`experience`, `landscape`,
 
 1. Push the committed files, including generated HTML, to GitHub.
 2. In Cloudflare **Workers & Pages**, create a **Pages** project with Git integration and select this repository.
-3. Set production branch to `main`, framework preset to **None**, build command empty (or `exit 0` if required), output directory to `.`, and root directory to the repository root. No secrets or environment variables are needed.
+3. Set production branch to `main`, framework preset to **None**, build command `python3 scripts/build.py`, output directory to `.`, and root directory to the repository root. No secrets or environment variables are needed.
 4. Deploy and review the supplied HTTPS `pages.dev` address or your configured domain. Future pushes to `main` trigger production deployments; use another branch for review previews.
 5. Check the homepage, direct hike URLs, journey anchors, and filtered links on mobile and desktop. If an old stylesheet is cached, hard-refresh or test a private window.
 
-You may optionally set the build command to `python3 scripts/build.py` if Python 3 is available in your Cloudflare build image, but this is not required: the committed files are already deployable. Direct Upload also works with `index.html` at the upload root; exclude `.git` and local artifacts.
+Keep the build command enabled so each deployment regenerates SEO files from the deployed pages. The committed files also support hosts without a build step; the sitemap GitHub Action refreshes them on pushes to `main` (requires Actions write permission and branch rules permitting the bot commit). Direct Upload also works with `index.html` at the upload root; exclude `.git` and local artifacts.
 
 ## Editorial status
 
@@ -71,3 +71,13 @@ A source’s **elevation change** is not silently converted to **cumulative elev
 ## Photos and copyright
 
 See [the photo workflow](docs/photos.md) for local WebP preparation, owner approval, license records, attribution, and image-size limits. Each hike has an optional `photo` record; `null` keeps its existing illustration. The build generates `photo-credits.html` and links it from every footer. Run `python3 scripts/test_photos.py` when changing photo handling. Pillow is optional editing tooling only; production and the site generator remain dependency-free.
+
+## XML sitemap and robots
+
+`scripts/build.py` regenerates root-level `sitemap.xml` and `robots.txt` using Python's standard library. The sitemap discovers public HTML files recursively, including new hike pages, and uses `https://takeahikeutah.org` with Cloudflare Pages' extensionless HTML URLs (`/` for `index.html`). Deploy the repository root as documented above so both SEO files are served at the domain root.
+
+Concept/pending hikes and the placeholder contact page receive `noindex, follow` without changing their appearance or availability. Remove the contact exclusion in `scripts/build.py` when a real contact method is published. For other unpublished pages, add `<meta name="robots" content="noindex, follow">` to their source template or static HTML. Templates, documentation, tooling, assets, hidden directories, error pages, meta-refresh redirects, and pages canonicalized elsewhere are excluded. Keep draft/placeholder pages marked noindex; do not store them as unmarked public HTML. Only publish redirects using Cloudflare's canonical extensionless routes; remove obsolete HTML when replacing a page with a redirect.
+
+Dates are omitted unless an editor supplies `<meta name="date-modified" content="YYYY-MM-DD">` in a page's source. Update this only when that page's content changes. Trail source-review dates, filesystem timestamps, and build times are not modification dates.
+
+Run `python3 scripts/check.py` to validate XML, unique canonical URLs, file targets, exclusions, dates, and repeatable generation. After deployment, run `python3 scripts/verify_live_sitemap.py` to request every sitemap URL plus the root SEO files, rejecting redirects and non-200 responses. This requires network access to the canonical domain.
